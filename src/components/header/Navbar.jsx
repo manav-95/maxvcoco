@@ -19,22 +19,24 @@ const Navbar = () => {
     }
 
     useEffect(() => {
-      const handleClickOutside = (event) => {
-        if(!menuRef?.current?.contains(event.target)) {
-            setMenuOpen(false);
+        const handleClickOutside = (event) => {
+            if (!menuRef?.current?.contains(event.target)) {
+                setMenuOpen(false);
+            };
         };
-      };
-      document.addEventListener('mousedown', handleClickOutside);
-    },[menuRef])
+        document.addEventListener('mousedown', handleClickOutside);
+    }, [menuRef])
 
 
     return (
-        <div className='bg-white fixed top-0 left-0 right-0 z-50 shadow-lg py-2'>
+        <div className='bg-[#fdf6f0] fixed top-0 left-0 right-0 z-50 shadow-lg py-2 md:py-0 poppins-regular'>
             <div className='max-w-7xl container mx-auto px-2 sm:px-4'>
                 <div className=' flex items-center justify-between'>
                     <img
                         src={Logo}
                         alt="Brand Logo"
+                        onClick={() => window.location.reload()}
+                        style={{ cursor: 'pointer' }}
                         className='-translate-y-1 h-12 w-38 lg:h-16 lg:w-68'
                     />
                     {/* Mobile menu */}
@@ -45,7 +47,7 @@ const Navbar = () => {
                                 : <MdOutlineMenuOpen className='h-10 w-10' />}
                         </button>
                         {menuOpen &&
-                            <div ref={menuRef} className={`absolute top-16 left-0 w-full bg-white flex flex-col space-y-1.5 py-4 px-2`}>
+                            <div ref={menuRef} className={`absolute top-16 left-0 w-full bg-[#fdf6f0] flex flex-col space-y-1.5 py-4 px-2`}>
                                 {navItems.map((item) => (
                                     <NavLink
                                         to={item.link}
@@ -54,7 +56,7 @@ const Navbar = () => {
                                         className={({ isActive }) =>
                                             isActive
                                                 ? 'block font-medium text-xl py-2 px-4 bg-red-400 text-white rounded'
-                                                : 'block font-medium text-xl py-2 px-4 rounded'
+                                                : 'block font-medium text-xl py-2 px-4 text-black rounded hover:bg-gray-100 transition-all duration-150 ease-in-out'
                                         }
                                     >
                                         {item.name}

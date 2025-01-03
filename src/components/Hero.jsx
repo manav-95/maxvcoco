@@ -43,7 +43,7 @@ return () => clearInterval(interval);
               </h1>
 
               {/* Subheading */}
-              <div className="bg-white bg-opacity-80 text-gray-800 py-2 sm:py-3 lg:py-4 rounded mt-4 mx-auto max-w-lg">
+              <div className="bg-[#fdf6f0] bg-opacity-80 text-[#4e3620] py-2 sm:py-3 lg:py-4 rounded mt-4 mx-auto max-w-lg">
                 <p className="min-[425px]:text-xl sm:text-2xl lg:text-4xl font-semibold text-center">
                   Chocolates & Cocoa
                 </p>
