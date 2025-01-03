@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Logo from '../../assets/company-logo.png'
 import { NavLink } from 'react-router-dom'
+import { MdOutlineMenuOpen, MdClose } from "react-icons/md";
 
 const Navbar = () => {
+    const [menuOpen, setMenuOpen] = useState(false);
+    const menuRef = useRef();
 
     const navItems = [
         { id: 1, name: 'Home', link: '/', },
@@ -11,15 +14,57 @@ const Navbar = () => {
         { id: 4, name: 'About us', link: '/about-us', },
     ]
 
+    const toggleMenu = () => {
+        setMenuOpen(!menuOpen);
+    }
+
+    useEffect(() => {
+      const handleClickOutside = (event) => {
+        if(!menuRef?.current?.contains(event.target)) {
+            setMenuOpen(false);
+        };
+      };
+      document.addEventListener('mousedown', handleClickOutside);
+    },[menuRef])
+
+
     return (
-        <div className=' bg-white fixed top-0 left-0 right-0 z-50 shadow-lg'>
-            <div className='max-w-7xl container mx-auto px-4'>
-                <div className='flex justify-between'>
+        <div className='bg-white fixed top-0 left-0 right-0 z-50 shadow-lg py-2'>
+            <div className='max-w-7xl container mx-auto px-2 sm:px-4'>
+                <div className=' flex items-center justify-between'>
                     <img
                         src={Logo}
                         alt="Brand Logo"
-                        className='h-16 w-68'
+                        className='-translate-y-1 h-12 w-38 lg:h-16 lg:w-68'
                     />
+                    {/* Mobile menu */}
+                    <div className='md:hidden'>
+                        <button onClick={toggleMenu}>
+                            {menuOpen
+                                ? <MdClose className='h-10 w-10' />
+                                : <MdOutlineMenuOpen className='h-10 w-10' />}
+                        </button>
+                        {menuOpen &&
+                            <div ref={menuRef} className={`absolute top-16 left-0 w-full bg-white flex flex-col space-y-1.5 py-4 px-2`}>
+                                {navItems.map((item) => (
+                                    <NavLink
+                                        to={item.link}
+                                        onClick={() => (setMenuOpen(false))}
+                                        key={item.id}
+                                        className={({ isActive }) =>
+                                            isActive
+                                                ? 'block font-medium text-xl py-2 px-4 bg-red-400 text-white rounded'
+                                                : 'block font-medium text-xl py-2 px-4 rounded'
+                                        }
+                                    >
+                                        {item.name}
+                                    </NavLink>
+                                ))}
+                            </div>
+                        }
+
+                    </div>
+                    {/* desktop menu */}
                     <div className='hidden md:flex items-center justify-center'>
                         {navItems.map((item) => (
                             <NavLink
