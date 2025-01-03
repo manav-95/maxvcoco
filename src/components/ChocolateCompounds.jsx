@@ -22,7 +22,7 @@ const ChocolateCompounds = () => {
 
                       {/* For Large Screens */}
                       <div className='hidden md:flex md:flex-col justify-center items-center text-center font-semibold text-5xl'>
-                        <h1 className='bg-[#fdf6f0] text-[#4e3620] py-2 px-10 rounded z-10'>Rich Chocolate Compound Flavors</h1>
+                        <h1 className='bg-[#fbecdf] text-[#4e3620] py-2 px-10 rounded z-10'>Rich Chocolate Compound Flavors</h1>
                         <h1 className='text-[#fdf6f0] py-2 '>Crafted For Every Delight</h1>
                     </div>
 
@@ -39,7 +39,7 @@ const ChocolateCompounds = () => {
                                         className='mb-4 rounded-lg'
                                     />
                                 </div>
-                                <div className='p-1.5 w-full text-[#fdf6f0] rounded group-hover:bg-[#fdf6f0] group-hover:text-[#4e3620] text-center transition-all duration-200 ease-in-out'>
+                                <div className='p-1.5 w-full text-[#fdf6f0] rounded group-hover:bg-[#fbecdf] group-hover:text-[#4e3620] text-center transition-all duration-200 ease-in-out'>
                                     <p className='text-3xl font-bold kanit-regular'>{flavour.flavour}</p>
                                 </div>
                             </div>

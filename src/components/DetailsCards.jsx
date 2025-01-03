@@ -4,7 +4,7 @@ import Baking_Process from '../assets/baking-process.jpg'
 
 const DetailsCards = () => {
     return (
-        <div className='w-full bg-[#FDF6F0]'>
+        <div className='w-full bg-[#fbecdf]'>
             <div className="max-w-7xl container mx-auto px-4 ">
 
 

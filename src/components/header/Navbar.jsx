@@ -29,7 +29,7 @@ const Navbar = () => {
 
 
     return (
-        <div className='bg-[#fdf6f0] fixed top-0 left-0 right-0 z-50 shadow-lg py-2 md:py-0 poppins-regular'>
+        <div className='bg-[#fbecdf] fixed top-0 left-0 right-0 z-50 shadow-lg py-2 md:py-0 poppins-regular'>
             <div className='max-w-7xl container mx-auto px-2 sm:px-4'>
                 <div className=' flex items-center justify-between'>
                     <img
@@ -47,7 +47,7 @@ const Navbar = () => {
                                 : <MdOutlineMenuOpen className='h-10 w-10' />}
                         </button>
                         {menuOpen &&
-                            <div ref={menuRef} className={`absolute top-16 left-0 w-full bg-[#fdf6f0] flex flex-col space-y-1.5 py-4 px-2`}>
+                            <div ref={menuRef} className={`absolute top-16 left-0 w-full bg-[#fbecdf] flex flex-col space-y-1.5 py-4 px-2`}>
                                 {navItems.map((item) => (
                                     <NavLink
                                         to={item.link}
