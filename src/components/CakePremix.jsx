@@ -49,7 +49,7 @@ const CakePremix = () => {
                 </div>
             <div className='max-w-7xl container mx-auto px-4 poppins-regular'>
                 <Slide triggerOnce direction='up'>
-                    <h1 className='text-5xl font-semibold text-white uppercase text-left min-[425px]:text-center'>Our Delicious Cake Premixes</h1>
+                    <h1 className='text-5xl font-semibold text-white uppercase text-center min-[425px]:text-center'>Our Delicious Cake Premixes</h1>
                 </Slide>
 
 
