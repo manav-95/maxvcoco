@@ -44,17 +44,18 @@ const FeaturedProducts = () => {
 
     return (
         <>
-            <div className='max-w-7xl container mx-auto px-4 my-14 poppins-regular'>
+        <div className='w-full bg-[#fbecdf] py-14'>
+            <div className='max-w-7xl container mx-auto px-4 poppins-regular'>
 
                 {/* For Small Screens */}
                 <div className='md:hidden text-center'>
-                    <h1 className='text-4xl min-[425px]:text-5xl font-semibold text-gray-800 uppercase'>featured Products</h1>
+                    <h1 className='text-4xl min-[425px]:text-5xl font-semibold text-[#4e3620] uppercase'>featured Products</h1>
                 </div>
 
                 {/* For Medium and above */}
                 <div className='hidden md:flex justify-between items-center'>
                     <Slide triggerOnce direction='left'>
-                        <h1 className='text-4xl font-semibold text-gray-800 uppercase'>featured Products</h1>
+                        <h1 className='text-4xl font-semibold text-[#4e3620] uppercase'>featured Products</h1>
                     </Slide>
                     <Slide triggerOnce direction='right'>
                         <NavLink to='/products' className='flex items-center bg-red-400 text-white font-medium text-lg px-6 py-2 rounded-full hover:bg-red-500 transition-all duration-75 ease-in-out'>View More<FaArrowRight className="h-6 w-6 ml-2" /></NavLink>
@@ -67,8 +68,8 @@ const FeaturedProducts = () => {
                             <div key={product.id} className="">
                                 <img src={product.image} alt={product.name} className="w-full h-60 object-cover" />
                                 <div className="p-4">
-                                    <h3 className="font-semibold text-xl mb-2">{product.name}</h3>
-                                    <p className="text-sm md:text-base text-gray-700">{product.description}</p>
+                                    <h3 className="font-semibold text-xl mb-2 text-[#4e3620]">{product.name}</h3>
+                                    <p className="text-sm md:text-base text-[#4e3620]">{product.description}</p>
                                 </div>
                             </div>
                         </Zoom>
@@ -80,6 +81,7 @@ const FeaturedProducts = () => {
                     </div>
 
                 </div>
+            </div>
             </div>
         </>
     )

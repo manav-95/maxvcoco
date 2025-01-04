@@ -5,6 +5,7 @@ import CakePremix from '../components/CakePremix'
 import MuffinPremix from '../components/MuffinPremix'
 import DetailsCards from '../components/DetailsCards'
 import ChocolateCompounds from '../components/ChocolateCompounds'
+import ChocoPaste from '../components/ChocoPaste'
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
    <Hero />
    <FeaturedProducts />
    <CakePremix />
+   <ChocoPaste />
    {/* <MuffinPremix /> */}
    <ChocolateCompounds />
    <DetailsCards />

@@ -38,7 +38,7 @@ const MuffinPremix = () => {
     ];
 
     return (
-        <div className='w-full bg-[#FDF6F0] py-14'>
+        <div className='w-full bg-[#fbecdf] py-14'>
             <div className='max-w-7xl container mx-auto px-4 poppins-regular'>
                 <Slide triggerOnce direction='up'>
                     <h1 className='text-4xl font-semibold text-gray-800 uppercase text-center'>We Also
