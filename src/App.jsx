@@ -13,7 +13,7 @@ const App = () => {
   return (
     <>
       <Router>
-        <ScrollToTop />
+         <ScrollToTop /> 
         <Navbar />
 
 
