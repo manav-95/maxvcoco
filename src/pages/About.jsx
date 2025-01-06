@@ -25,10 +25,10 @@ const About = () => {
         className="relative bg-cover bg-center h-[400px] kanit-regular"
         style={{ backgroundImage: `url(${AboutHeroBg})` }}
       >
-        <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center text-center text-white">
-          <div>
+        <div className="absolute inset-0 bg-black bg-opacity-65 flex items-center justify-center text-center text-white">
+          <div className='flex flex-col items-center'>
             <h1 className="text-5xl font-extrabold drop-shadow-lg">Crafting Moments of Pure Joy</h1>
-            <p className="mt-4 text-2xl drop-shadow-lg">
+            <p className="max-w-xl mt-4 text-xl sm:text-2xl drop-shadow-lg">
             Discover our journey of passion, excellence, and commitment to delivering exceptional chocolate experiences to brighten every occasion.
             </p>
           </div>
@@ -63,7 +63,7 @@ const About = () => {
       <section className='px-4 py-16 bg-white poppins-regular'>
         <div className='max-w-7xl container mx-auto'>
           <h2 className="text-5xl font-extrabold text-center text-gray-800 mb-8 kanit-semibold">Our Core Values</h2>
-          <div className='grid grid-cols-12 gap-10 my-6'>
+          <div className='grid grid-cols-1 gap-10 my-6'>
             {ourValues.map(value => (
                 <div key={value.id} className={`${value.colSpan} group flex flex-col justify-center items-center text-center bg-gray-50 p-6  rounded-lg shadow-lg hover:bg-[#664436] hover:bg-opacity-85 transition-all duration-200 ease-in-out`}>
                   <img src={value.image} alt={value.title} className='h-32 w-32 p-4 mb-2 rounded' />

@@ -1,15 +1,21 @@
 import React from 'react'
 import { Slide, Fade, Zoom } from 'react-awesome-reveal'
-import Flavour_Example_Image from '../assets/flavour-example.jpg'
+// Chocolate Compounds 
+import Mango from '../assets/chocolate-compounds-images/mango.png'
+import Orange from '../assets/chocolate-compounds-images/orange.png'
+import Strawberry from '../assets/chocolate-compounds-images/strawberry.png'
+import Pineapple from '../assets/chocolate-compounds-images/pineapple.png'
+import Blueberry from '../assets/chocolate-compounds-images/blueberry.png'
+import Pista from '../assets/chocolate-compounds-images/pista.png'
 
 const ChocolateCompounds = () => {
     const flavours = [
-        { id: 1, delay: 0, bgColor: 'bg-[#FFC324]', image: Flavour_Example_Image, flavour: 'Mango', },
-        { id: 2, delay: 150, bgColor: 'bg-[#93C572]', image: Flavour_Example_Image, flavour: 'Pista', },
-        { id: 3, delay: 300, bgColor: 'bg-[#FFA500]', image: Flavour_Example_Image, flavour: 'Orange', },
-        { id: 4, delay: 450, bgColor: 'bg-[#4F86F7]', image: Flavour_Example_Image, flavour: 'Blueberry', },
-        { id: 5, delay: 600, bgColor: 'bg-[#FF4C4C]', image: Flavour_Example_Image, flavour: 'Strawberry', },
-        { id: 6, delay: 750, bgColor: 'bg-[#F8D568]', image: Flavour_Example_Image, flavour: 'Pineapple', },
+        { id: 1, delay: 0, bgColor: 'bg-[#FFC324]', image: Mango, flavour: 'Mango', },
+        { id: 2, delay: 150, bgColor: 'bg-[#93C572]', image: Pista, flavour: 'Pista', },
+        { id: 3, delay: 300, bgColor: 'bg-[#FFA500]', image: Orange, flavour: 'Orange', },
+        { id: 4, delay: 450, bgColor: 'bg-[#4F86F7]', image: Blueberry, flavour: 'Blueberry', },
+        { id: 5, delay: 600, bgColor: 'bg-[#FF4C4C]', image: Strawberry, flavour: 'Strawberry', },
+        { id: 6, delay: 750, bgColor: 'bg-[#F8D568]', image: Pineapple, flavour: 'Pineapple', },
     ]
     return (
         <>
@@ -44,11 +50,11 @@ const ChocolateCompounds = () => {
                                         key={flavour.id}
                                         className={`group flex flex-col items-center justify-center p-4 rounded`}
                                     >
-                                        <div>
+                                        <div className=''>
                                             <img
                                                 src={flavour.image}
                                                 alt={flavour.flavour}
-                                                className='mb-4 rounded-lg'
+                                                className='mb-4 rounded-lg object-contain h-60 w-60' 
                                             />
                                         </div>
                                         <div className='p-1.5 w-full text-[#fdf6f0] rounded group-hover:bg-[#fbecdf] group-hover:text-[#4e3620] text-center transition-all duration-200 ease-in-out'>

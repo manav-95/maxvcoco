@@ -2,17 +2,26 @@ import React from 'react'
 import { Slide, Fade, Zoom } from 'react-awesome-reveal'
 import ExImage from '../assets/chcoc-paste-images/choco-paste-example.png'
 
+import WhitePaste from '../assets/chcoc-paste-images/white.png'
+import MilkPaste from '../assets/chcoc-paste-images/milk.png'
+import DarkPaste from '../assets/chcoc-paste-images/dark.png'
+import HazelnutPaste from '../assets/chcoc-paste-images/hazelnut.png'
+
+import Dark from '../assets/choco-chips-images/dark.png'
+import White from '../assets/choco-chips-images/white.png'
+import Milk from '../assets/choco-chips-images/milk.png'
+
 const ChocoPaste = () => {
     const chocoPastes = [
-        { id: 1, delay: 0, image: ExImage, name: 'White Chocolate', },
-        { id: 2, delay: 200, image: ExImage, name: 'Milk Chocolate', },
-        { id: 3, delay: 400, image: ExImage, name: 'Dark Chocolate', },
-        { id: 4, delay: 600, image: ExImage, name: 'Hazelnut Sprade', },
+        { id: 1, delay: 0, image: WhitePaste, name: 'White Chocolate', },
+        { id: 2, delay: 200, image: MilkPaste, name: 'Milk Chocolate', },
+        { id: 3, delay: 400, image: DarkPaste, name: 'Dark Chocolate', },
+        { id: 4, delay: 600, image: HazelnutPaste, name: 'Hazelnut Sprade', },
     ]
     const chocoChips = [
-        { id: 1, delay: 0, colSpan: 'col-span-1 sm:col-span-4', rowSpan: 'row-span-0', image: ExImage, name: 'White Chocolate Chips', },
-        { id: 2, delay: 200, colSpan: 'col-span-1 sm:col-span-2', rowSpan: 'row-span-0', image: ExImage, name: 'Milk Chocolate Chips', },
-        { id: 3, delay: 400, colSpan: 'col-span-1 sm:col-span-2', rowSpan: 'row-span-0', image: ExImage, name: 'Dark Chocolate Chips', },
+        { id: 1, delay: 0, colSpan: 'col-span-1 sm:col-span-4', rowSpan: 'row-span-0', image: White, name: 'White Chocolate Chips', },
+        { id: 2, delay: 200, colSpan: 'col-span-1 sm:col-span-2', rowSpan: 'row-span-0', image: Milk, name: 'Milk Chocolate Chips', },
+        { id: 3, delay: 400, colSpan: 'col-span-1 sm:col-span-2', rowSpan: 'row-span-0', image: Dark, name: 'Dark Chocolate Chips', },
     ]
     return (
         <>
@@ -28,7 +37,7 @@ const ChocoPaste = () => {
                         </Slide>
                     </Fade>
 
-                    <div className='grid grid-cols-1 min-[425px]:grid-cols-2 lg:grid-cols-4 gap-4 py-14'>
+                    <div className='grid grid-cols-1 min-[425px]:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8 py-14'>
                         {chocoPastes.map(paste => (
                             <Fade triggerOnce duration={1200}>
                                 <Slide triggerOnce direction='up' duration={1200} delay={paste.delay} >
@@ -39,7 +48,7 @@ const ChocoPaste = () => {
                                         <img
                                             src={paste.image}
                                             alt={paste.name}
-                                            className='object-cover'
+                                            className='h-52 w-96 object-contain'
                                         />
                                         <p className='text-2xl min-[425px]:text-xl sm:text-3xl lg:text-2xl xl:text-3xl text-center font-semibold text-[#4e3620]'>{paste.name}</p>
                                     </div>

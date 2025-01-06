@@ -1,11 +1,9 @@
 import React from 'react'
 import { Slide } from 'react-awesome-reveal'
 
-import Chocolate_Cake from '../assets/muffin-premix-images/chocolate-cake.png'
-import Brownie_Cake from '../assets/muffin-premix-images/brownie-cake.jpg'
-import Chocolate_Muffin from '../assets/muffin-premix-images/chocolate-muffin.jpg'
-import Vanilla_Muffin from '../assets/muffin-premix-images/vanilla-muffin.jpg'
-import Waffle from '../assets/muffin-premix-images/waffle.jpg'
+import Chocolate_Muffin from '../assets/muffin-premix-images/chocolate-muffin.png'
+import Vanilla_Muffin from '../assets/muffin-premix-images/vanilla-muffin.png'
+import Waffle from '../assets/muffin-premix-images/waffle.png'
 
 const MuffinPremix = () => {
 
@@ -24,16 +22,6 @@ const MuffinPremix = () => {
             name: 'Chocolate Cake Premix',
             image: Chocolate_Cake,
             description: 'Decadent chocolate cake for any occasion.',
-        },
-        {
-            name: 'Brownie Cake Premix',
-            image: Brownie_Cake,
-            description: 'Fudgy, rich brownies in a snap.',
-        },
-        {
-            name: 'Waffle Premix',
-            image: Waffle,
-            description: 'Crispy, golden waffles every time.',
         },
     ];
 

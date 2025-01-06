@@ -7,24 +7,25 @@ import Products from './pages/Products'
 import Services from './pages/Services'
 import AboutUs from './pages/About'
 import './App.css'
+import Footer from './components/footer/Footer'
 
 const App = () => {
   return (
     <>
       <Router>
-        {/* <ScrollToTop /> */}
+        <ScrollToTop />
         <Navbar />
-        <Routes>
-          <Route path='/' element={<Home />} />
-        </Routes>
+
+
         <div className='mt-16'>
           <Routes>
-            <Route path='/products' element={<Products />} />
+            <Route path='/' element={<Home />} />
+            <Route path='/products/:category' element={<Products />} />
             <Route path='/services' element={<Services />} />
             <Route path='/about-us' element={<AboutUs />} />
           </Routes>
         </div>
-
+        <Footer />
       </Router>
     </>
   )
