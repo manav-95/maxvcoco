@@ -153,7 +153,7 @@ const Footer = () => {
                     {/* Copyright */}
                     <div className="mt-8 pt-8 border-t-2 border-[#fbecdf] text-center">
                         <p className='text-red-400'>&copy; {new Date().getFullYear()} Plasti Injmould India Ltd.</p>
-                        <p className='text-[#fbecdf]'>All rights reserved</p>
+                        <p className='text-[#fbecdf]'>All rights reserved, by A9 Business</p>
                     </div>
                 </div>
             </footer>

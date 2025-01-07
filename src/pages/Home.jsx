@@ -6,6 +6,8 @@ import MuffinPremix from '../components/MuffinPremix'
 import DetailsCards from '../components/DetailsCards'
 import ChocolateCompounds from '../components/ChocolateCompounds'
 import ChocoPaste from '../components/ChocoPaste'
+import CocoaReplacer from '../components/CocoaReplacer'
+import CocoaSubstitute from '../components/CocoaSubstitute'
 
 const Home = () => {
   return (
@@ -17,6 +19,8 @@ const Home = () => {
    {/* <MuffinPremix /> */}
    <ChocolateCompounds />
    <DetailsCards />
+   <CocoaReplacer />
+   <CocoaSubstitute />
    </>
   )
 }
