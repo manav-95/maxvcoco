@@ -3,8 +3,13 @@ import products from '../data/productPageData';
 
 import { FaChevronDown } from "react-icons/fa";
 
-import { Fade, Slide } from 'react-awesome-reveal'
+import { Fade, Slide, Zoom } from 'react-awesome-reveal'
+
 import HeroImage from '../assets/hero-images/products-hero-bg.jpg'
+import ServicesHeroBg from '../assets/hero-images/services-hero-bg.jpg'
+
+
+
 import { useNavigate, useParams } from 'react-router-dom';
 
 
@@ -19,29 +24,29 @@ const Products = () => {
 
   const categories = Object.keys(products);
   const [selectedCategory, setSelectedCategory] = useState(categories[0]);
-  const [filteredProducts, setFilteredProducts] = useState(products.CakePremixes);
+  const [filteredProducts, setFilteredProducts] = useState(products['Cake Premixes']);
 
   useEffect(() => {
     switch (category) {
-      case "CakePremixes":
+      case "Cake Premixes":
         setSelectedCategory(categories[0])
-        setFilteredProducts(products.CakePremixes)
+        setFilteredProducts(products['Cake Premixes'])
         break;
-      case "MuffinPremixes":
+      case "Muffin Premixes":
         setSelectedCategory(categories[1])
-        setFilteredProducts(products.MuffinPremixes)
+        setFilteredProducts(products['Muffin Premixes'])
         break;
-      case "ChocolateCompounds":
+      case "Compounds":
         setSelectedCategory(categories[2])
-        setFilteredProducts(products.ChocolateCompounds)
+        setFilteredProducts(products.Compounds)
         break;
-      case "ChocoPastes":
+      case "Choco Pastes":
         setSelectedCategory(categories[3])
-        setFilteredProducts(products.ChocoPastes)
+        setFilteredProducts(products['Choco Pastes'])
         break;
-      case "ChocoChips":
+      case "Choco Chips":
         setSelectedCategory(categories[4])
-        setFilteredProducts(products.ChocoChips)
+        setFilteredProducts(products['Choco Chips'])
         break;
       default:
         break;
@@ -51,16 +56,23 @@ const Products = () => {
   return (
     <>
 
-      <Fade triggerOnce>
-        <header style={{ backgroundImage: `url(${HeroImage})` }} className="relative bg-cover h-[400px] flex items-center justify-center text-center text-white kanit-regular">
-          <div className='absolute inset-0 bg-black bg-opacity-25 '>
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white">
-              <h1 className="text-5xl font-extrabold drop-shadow-2xl opacity-100">Our Premium Chocolate Products</h1>
-              <p className="mt-2 text-2xl drop-shadow-2xl opacity-100">Discover a variety of chocolate delights for baking, snacking, and creating</p>
-            </div>
+      <Fade triggerOnce duration={1200}>
+        <header
+          style={{ backgroundImage: `url(${ServicesHeroBg})` }}
+          className="relative bg-cover bg-center h-[300px] md:h-[320px] lg:h-[340px] flex items-center justify-center text-center text-white kanit-regular"
+        >
+          <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+          <div className='max-w-7xl container mx-auto flex flex-col justify-center items-center px-4'>
+            <h1 className="text-4xl min-[425px]:text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-7xl font-extrabold drop-shadow-2xl">
+              Our Premium Chocolate Products
+            </h1>
+            {/* <p className="mt-2 text-md min-[425px]:text-lg md:text-xl lg:text-3xl drop-shadow-2xl">
+        Discover a variety of chocolate delights for baking, snacking, and creating
+        </p> */}
           </div>
         </header>
       </Fade>
+
 
       <div className='w-full bg-[#4e3620] poppins-regular'>
         <div className='max-w-7xl container mx-auto px-4 lg:py-10'>
@@ -96,7 +108,7 @@ const Products = () => {
 
             {/* For Medium + Screens  */}
             <Slide triggerOnce direction='up'>
-              <div className="hidden lg:w-10/12 lg:grid content-center gap-3 lg:mr-4">
+              <div className="hidden lg:grid content-center gap-3 lg:mr-4">
                 {categories.map(category => (
                   <button
                     key={category}
@@ -112,22 +124,23 @@ const Products = () => {
               </div>
             </Slide>
 
-            <section className="w-full poppins-regular">
+            <section className="w-full lg:w-9/12 xl:w-10/12 poppins-regular">
               {/* <Slide triggerOnce direction='up'>
               <h2 className="text-4xl font-bold text-center uppercase">Our Products</h2>
             </Slide> */}
               <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-8">
                 {filteredProducts.map((product) => (
                   <Slide
+                  delay={product.delay}
                     triggerOnce
                     direction='up'
                     key={product.id}
                     className='bg-[#fbecdf] p-3 shadow-lg rounded-lg hover:shadow-xl'
                   >
-                    <div
-                      className=''
-                    >
-          
+                      <div
+                        className=''
+                      >
+
                         <div className=''>
                           <img
                             src={product.image}
@@ -135,11 +148,11 @@ const Products = () => {
                             className={`h-56 w-full object-contain bg-[#4e3620] bg-opacity-10 rounded-lg`}
                           />
                         </div>
-                   
-                      <div className="w-full text-center mt-3">
-                        <h3 className="text-lg font-semibold text-[#fff] bg-[#4e3620] p-2 rounded-md ">{product.name}</h3>
+
+                        <div className="w-full text-center mt-3">
+                          <h3 className="text-lg font-semibold text-[#fff] bg-[#4e3620] p-2 rounded-md ">{product.name}</h3>
+                        </div>
                       </div>
-                    </div>
                   </Slide>
                 ))}
               </div>

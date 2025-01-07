@@ -10,8 +10,9 @@ import White_Chocolate_Compound from '../assets/products-images/white-chocolate-
 import Chocolate_Paste from '../assets/chcoc-paste-images/choco-paste-example.png'
 
 import DarkChocolateCompound from '../assets/feature-products-images/dark-chocolate-compound.png'
-import ChocolateSlab from '../assets/feature-products-images/chocolate-slab.png'
+import ChocolateSlab from '../assets/feature-products-images/milk-chocolate.png'
 import WhitePaste from '../assets/feature-products-images/white.png'
+import WhiteChocolateCompound from '../assets/feature-products-images/white-chocolate.png'
 
 
 const FeaturedProducts = () => {
@@ -41,7 +42,7 @@ const FeaturedProducts = () => {
         {
             id: 4,
             name: "White Chocolate Compound",
-            image: Chocolate_Paste,
+            image: WhiteChocolateCompound,
             description: "Velvety and creamy white chocolate compound, ideal for coatings and desserts.",
             delay: 150,
         },
@@ -63,7 +64,7 @@ const FeaturedProducts = () => {
                             <h1 className='text-4xl font-semibold text-[#fbecdf] uppercase'>featured Products</h1>
                         </Slide>
                         <Slide triggerOnce direction='right'>
-                            <NavLink to='/products/CakePremixes' className='flex items-center bg-[#fbecdf] text-[#4e3620] font-medium text-lg px-6 py-2 rounded-full  transition-all duration-75 ease-in-out'>View More<FaArrowRight className="h-6 w-6 ml-2" /></NavLink>
+                            <NavLink to='/products/Cake Premixes' className='flex items-center bg-[#fbecdf] text-[#4e3620] font-medium text-lg px-6 py-2 rounded-full  transition-all duration-75 ease-in-out'>View More<FaArrowRight className="h-6 w-6 ml-2" /></NavLink>
                         </Slide>
                     </div>
 
@@ -84,9 +85,11 @@ const FeaturedProducts = () => {
                         ))}
 
                         {/* View More Button For Small Screens*/}
-                        <div className='md:hidden w-full sm:col-span-2'>
-                            <NavLink to='/products/CakePremixes' className='flex items-center justify-center bg-[#fbecdf] text-[#4e3620] font-medium text-lg px-6 py-2 my-4 rounded-full transition-all duration-75 ease-in-out'>View More</NavLink>
+                        <Slide triggerOnce direction='up'  className='md:hidden w-full sm:col-span-2'>
+                        <div>
+                            <NavLink to='/products/Cake Premixes' className='flex items-center justify-center bg-[#fbecdf] text-[#4e3620] font-medium text-lg px-6 py-2 my-4 rounded-full transition-all duration-75 ease-in-out'>View More</NavLink>
                         </div>
+                        </Slide>
 
                     </div>
                 </div>

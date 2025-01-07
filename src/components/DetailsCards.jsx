@@ -1,5 +1,6 @@
 import React from 'react';
 import { Slide, Fade, Zoom } from 'react-awesome-reveal'
+import {NavLink} from 'react-router-dom'
 import Premium_Chocolate_Making from '../assets/premium-chocolate-making.jpg'
 import Baking_Process from '../assets/baking-process.jpg'
 
@@ -37,9 +38,11 @@ const DetailsCards = () => {
                                             <li>Chocolava Cake Premix</li>
                                             <li>Waffle Premix</li>
                                         </ul>
-                                        <button className="px-6 py-3 bg-[#fbecdf] text-[#4E3620] rounded-lg font-semibold transition-colors duration-200">
+                                        <NavLink
+                                        to={'products/Muffin Premixes'}
+                                        className="px-6 py-3 bg-[#fbecdf] text-[#4E3620] rounded-lg font-semibold transition-colors duration-200">
                                             Explore Our Products
-                                        </button>
+                                        </NavLink>
                                     </Zoom>
                                 </div>
                             </div>

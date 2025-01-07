@@ -1,15 +1,33 @@
 import React, { useEffect, useRef, useState } from 'react'
 import Logo from '../../assets/company-logo.png'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useLocation } from 'react-router-dom'
 import { MdOutlineMenuOpen, MdClose } from "react-icons/md";
 
 const Navbar = () => {
+
+    const [productLinkActive, setProductLinkActive] = useState(false)
+
+    const location = useLocation();
+
+    const productsLocations = [
+        '/products/Cake%20Premixes',
+        '/products/Muffin%20Premixes',
+        '/products/Compounds',
+        '/products/Choco%20Pastes',
+        '/products/Choco%20Chips',
+    ]
+
+    useEffect(() => {
+        setProductLinkActive(productsLocations.includes(location.pathname));
+        
+    },[location.pathname])
+
     const [menuOpen, setMenuOpen] = useState(false);
     const menuRef = useRef();
 
     const navItems = [
         { id: 1, name: 'Home', link: '/', },
-        { id: 2, name: 'Products', link: '/products/CakePremixes', },
+        { id: 2, name: 'Products', link: '/products/Cake Premixes', },
         { id: 3, name: 'Services', link: '/services', },
         { id: 4, name: 'About us', link: '/about-us', },
     ]
@@ -54,7 +72,7 @@ const Navbar = () => {
                                         onClick={() => (setMenuOpen(false))}
                                         key={item.id}
                                         className={({ isActive }) =>
-                                            isActive
+                                            (isActive || (item.name === 'Products' && productLinkActive))
                                                 ? 'block font-medium text-xl py-2 px-4 bg-red-400 text-white rounded'
                                                 : 'block font-medium text-xl py-2 px-4 text-black rounded hover:bg-gray-100 transition-all duration-150 ease-in-out'
                                         }
@@ -73,7 +91,7 @@ const Navbar = () => {
                                 to={item.link}
                                 key={item.id}
                                 className={({ isActive }) =>
-                                    isActive
+                                    (isActive || (item.name === 'Products' && productLinkActive))
                                         ? 'text-lg font-semibold px-4 py-4 border-b-4 border-red-500 text-red-500 rounded-sm transition-all duration-200 ease-in-ou4'
                                         : 'text-lg font-semibold px-4 py-4 border-b-4 border-transparent hover:text-red-500 transition-all duration-200 ease-in-out'
                                 }
