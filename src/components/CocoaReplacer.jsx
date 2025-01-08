@@ -2,12 +2,15 @@ import React from 'react'
 import { Fade, Slide, Zoom } from 'react-awesome-reveal'
 import ExampleImage from '../assets/chcoc-paste-images/white.png'
 
+import CocoaReplacerImage from '../assets/cocoa-images/cocoa-replacer.jpg' 
+
+
 const CocoaReplacer = () => {
     return (
         <>
             <div className='w-full bg-[#4E3620] poppins-regular'>
                 <div className='max-w-7xl mx-auto container px-4 lg:px-10 py-16'>
-                    <div className='flex flex-col space-y-10 lg:flex-row lg:items-center lg:justify-between  lg:gap-x-14'>
+                    <div className='flex flex-col space-y-10 lg:space-y-0 lg:flex-row lg:items-center lg:justify-between  lg:gap-x-14'>
                         <Fade triggerOnce className='lg:w-1/2 text-center lg:text-left'>
                             <Slide triggerOnce direction='up' >
                                 <div>
@@ -17,19 +20,19 @@ const CocoaReplacer = () => {
                             </Slide>
                         </Fade>
 
-                        <div className='lg:w-1/2 grid min-[425px]:grid-cols-2 gap-6 items-center justify-center'>
+                        <div className='lg:w-1/2 '>
 
                             <Zoom triggerOnce duration={800}>
-                                <div className='flex items-center justify-center bg-[#fbecdf] bg-opacity-10 rounded-lg p-2'>
+                                <div className='flex items-center justify-center bg-[#fbecdf] bg-opacity-10 rounded-lg'>
                                     <img
-                                        src={ExampleImage}
+                                        src={CocoaReplacerImage}
                                         alt='image1'
-                                        className='h-full w-full lg:h-40 lg:w-40 xl:h-48 xl:w-56 object-contain'
+                                        className='h-full w-full rounded-lg object-cover'
                                     />
                                 </div>
                             </Zoom>
 
-                            <Zoom triggerOnce duration={800} delay={150}>
+                            {/* <Zoom triggerOnce duration={800} delay={150}>
                                 <div className='flex items-center justify-center bg-[#fbecdf] bg-opacity-10 rounded-lg p-2'>
                                     <img
                                         src={ExampleImage}
@@ -57,7 +60,7 @@ const CocoaReplacer = () => {
                                         className='h-full w-full lg:h-40 lg:w-40 xl:h-48 xl:w-56 object-contain'
                                     />
                                 </div>
-                            </Zoom>
+                            </Zoom> */}
 
                         </div>
 
