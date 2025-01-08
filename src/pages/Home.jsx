@@ -18,9 +18,9 @@ const Home = () => {
    <ChocoPaste />
    {/* <MuffinPremix /> */}
    <ChocolateCompounds />
-   <DetailsCards />
-   <CocoaReplacer />
    <CocoaSubstitute />
+   <CocoaReplacer />
+   <DetailsCards />
    </>
   )
 }
