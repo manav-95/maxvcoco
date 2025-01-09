@@ -11,12 +11,12 @@ import MilkChocolateCompound from '../assets/chocolate-compounds-images/milk-cho
 import DarkChocolateCompound from '../assets/chocolate-compounds-images/dark-chocolate-compound.png'
 
 // Chocolate Compounds Flavours
-import Mango from '../assets/chocolate-compounds-images/mango.png'
-import Orange from '../assets/chocolate-compounds-images/orange.png'
-import Strawberry from '../assets/chocolate-compounds-images/strawberry.png'
-import Pineapple from '../assets/chocolate-compounds-images/pineapple.png'
-import Blueberry from '../assets/chocolate-compounds-images/blueberry.png'
-import Pista from '../assets/chocolate-compounds-images/pista.png'
+import Mango from '../assets/chocolate-compounds-images/mango-flavour.png'
+import Orange from '../assets/chocolate-compounds-images/orange-flavour.png'
+import Strawberry from '../assets/chocolate-compounds-images/strawberry-flavour.png'
+import Pineapple from '../assets/chocolate-compounds-images/pineapple-flavour.png'
+import Blueberry from '../assets/chocolate-compounds-images/blueberry-flavour.png'
+import Pista from '../assets/chocolate-compounds-images/pista-flavour.png'
 
 
 const ChocolateCompounds = () => {

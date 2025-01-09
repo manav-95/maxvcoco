@@ -32,7 +32,7 @@ return () => clearInterval(interval);
         style={{
           backgroundImage: `url(${heroImages[currentIndex]})`,
         }}
-        className="relative h-[360px] sm:h-[440px] md:h-[540px] lg:h-screen w-full bg-cover bg-center poppins-regular transition-all"
+        className="bg-black relative h-[360px] sm:h-[440px] md:h-[540px] lg:h-screen w-full bg-cover bg-center poppins-regular transition-all"
       >
         <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
           <Slide triggerOnce direction="up">
