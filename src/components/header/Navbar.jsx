@@ -10,11 +10,13 @@ const Navbar = () => {
     const location = useLocation();
 
     const productsLocations = [
-        '/products/Cake%20Premixes',
-        '/products/Muffin%20Premixes',
-        '/products/Compounds',
+        '/products/Premixes',
+        '/products/Chocolate%20Compounds',
+        '/products/Real%20Chocolates',
         '/products/Choco%20Pastes',
         '/products/Choco%20Chips',
+        '/products/Cocoa%20Substitute',
+        '/products/Consumer%20Chocolates',
     ]
 
     useEffect(() => {
@@ -27,7 +29,7 @@ const Navbar = () => {
 
     const navItems = [
         { id: 1, name: 'Home', link: '/', },
-        { id: 2, name: 'Products', link: '/products/Cake Premixes', },
+        { id: 2, name: 'Products', link: '/products/Premixes', },
         { id: 3, name: 'Services', link: '/services', },
         { id: 4, name: 'About us', link: '/about-us', },
     ]

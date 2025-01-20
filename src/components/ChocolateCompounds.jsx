@@ -106,7 +106,7 @@ const ChocolateCompounds = () => {
                             <h1 className='text-[#fdf6f0] py-2 font-semibold text-5xl md:text-4xl lg:text-5xl'>Chocolate Compound Flavours</h1>
                         </Slide>
                         <Slide triggerOnce direction='right'>
-                            <NavLink to='/products/Compounds' className='flex items-center bg-[#fbecdf] text-[#4e3620] font-medium text-lg px-6 py-2 rounded-full  transition-all duration-75 ease-in-out'>See More Flavours<FaArrowRight className="h-6 w-6 ml-2" /></NavLink>
+                            <NavLink to='/products/Chocolate Compounds' className='flex items-center bg-[#fbecdf] text-[#4e3620] font-medium text-lg px-6 py-2 rounded-full  transition-all duration-75 ease-in-out'>See More Flavours<FaArrowRight className="h-6 w-6 ml-2" /></NavLink>
                         </Slide>
                     </div>
 
@@ -144,7 +144,7 @@ const ChocolateCompounds = () => {
                     {/* View More Button For Small Screens*/}
                     <Slide triggerOnce direction='up'>
                         <div className='md:hidden w-full sm:col-span-2'>
-                            <NavLink to='/products/Compounds' className='flex items-center justify-center bg-[#fbecdf] text-[#4e3620] font-medium text-lg px-6 py-2 my-4 rounded-full transition-all duration-75 ease-in-out'>See More Flavours</NavLink>
+                            <NavLink to='/products/Chocolate Compounds' className='flex items-center justify-center bg-[#fbecdf] text-[#4e3620] font-medium text-lg px-6 py-2 my-4 rounded-full transition-all duration-75 ease-in-out'>See More Flavours</NavLink>
                         </div>
                     </Slide>
                 </div>

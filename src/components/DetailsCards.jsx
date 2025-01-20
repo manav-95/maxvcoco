@@ -39,7 +39,7 @@ const DetailsCards = () => {
                                             <li>Waffle Premix</li>
                                         </ul>
                                         <NavLink
-                                        to={'products/Muffin Premixes'}
+                                        to={'products/Premixes'}
                                         className="px-6 py-3 bg-[#fbecdf] text-[#4E3620] rounded-lg font-semibold transition-colors duration-200">
                                             Explore Our Products
                                         </NavLink>

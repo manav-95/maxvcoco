@@ -37,24 +37,37 @@ import Milk from '../assets/choco-chips-images/milk.png'
 
 const products = {
 
-    'Cake Premixes': [
+    // 'Cake Premixes': [
+    //     { id: 1, delay: 0, image: ChocolateCakePremix, name: 'Chocolate Cake Premix' },
+    //     { id: 2, delay: 150, image: VanillaCakePremix, name: 'Vanilla Cake Premix' },
+    //     { id: 3, delay: 300, image: RedVelvetCakePremix, name: 'Red Velvet Cake Premix' },
+    //     { id: 4, delay: 450, image: ChocolavaCakePremix, name: 'Chocolava Cake Premix' },
+    //     { id: 5, delay: 600, image: BrownieCakePremix, name: 'Brownie Cake Premix' },
+    // ],
+
+    // 'Muffin Premixes': [
+    //     { id: 1, delay: 0, image: ChocolateMuffinPremix, name: 'Chocolate Muffin Premix' },
+    //     { id: 2, delay: 200, image: VanillaMuffinPremix, name: 'Vanilla Muffin Premix' },
+    //     { id: 3, delay: 400, image: WafflePremix, name: 'Waffle Premix' },
+    // ],
+
+    'Premixes': [
         { id: 1, delay: 0, image: ChocolateCakePremix, name: 'Chocolate Cake Premix' },
         { id: 2, delay: 150, image: VanillaCakePremix, name: 'Vanilla Cake Premix' },
         { id: 3, delay: 300, image: RedVelvetCakePremix, name: 'Red Velvet Cake Premix' },
         { id: 4, delay: 450, image: ChocolavaCakePremix, name: 'Chocolava Cake Premix' },
         { id: 5, delay: 600, image: BrownieCakePremix, name: 'Brownie Cake Premix' },
+
+        { id: 6, delay: 0, image: ChocolateMuffinPremix, name: 'Chocolate Muffin Premix' },
+        { id: 7, delay: 200, image: VanillaMuffinPremix, name: 'Vanilla Muffin Premix' },
+        { id: 8, delay: 400, image: WafflePremix, name: 'Waffle Premix' },
     ],
 
-    'Muffin Premixes': [
-        { id: 1, delay: 0, image: ChocolateMuffinPremix, name: 'Chocolate Muffin Premix' },
-        { id: 2, delay: 200, image: VanillaMuffinPremix, name: 'Vanilla Muffin Premix' },
-        { id: 3, delay: 400, image: WafflePremix, name: 'Waffle Premix' },
-    ],
-
-    Compounds: [
+    'Chocolate Compounds': [
         { id: 1, delay: 0, image: WhiteChocolateCompound, name: 'White Chocolate' },
         { id: 2, delay: 150, image: MilkChocolateCompound, name: 'Milk Chocolate' },
         { id: 3, delay: 300, image: DarkChocolateCompound, name: 'Dark Chocolate' },
+
         { id: 4, delay: 450, image: Mango, name: 'Mango Chocolate' },
         { id: 5, delay: 600, image: Orange, name: 'Orange Chocolate' },
         { id: 6, delay: 750, image: Pista, name: 'Pista Chocolate' },
@@ -63,17 +76,45 @@ const products = {
         { id: 9, delay: 1200, image: Pineapple, name: 'Pineapple Chocolate' },
     ],
 
+    'Real Chocolates': [
+        { id: 1, delay: 0, image: White, name: 'Covature' },
+        { id: 2, delay: 200, image: Dark, name: 'Chips' },
+        { id: 3, delay: 400, image: Milk, name: 'Coco Butter' },
+        { id: 4, delay: 400, image: Milk, name: 'Coco Mass' }, 
+        { id: 5, delay: 400, image: Milk, name: 'Chocolate Tablets' }, 
+        { id: 6, delay: 400, image: Milk, name: 'Customized Chocolates' },
+    ],
+
     'Choco Pastes': [
         { id: 1, delay: 0, image: WhitePaste, name: 'White Chocolate' },
         { id: 2, delay: 200, image: MilkPaste, name: 'Milk Chocolate' },
         { id: 3, delay: 400, image: DarkPaste, name: 'Dark Chocolate' },
         { id: 4, delay: 600, image: HazelnutPaste, name: 'Hazelnut Sprade' },
+
+        { id: 5, delay: 400, image: DarkPaste, name: 'Strawberry' },
+        { id: 6, delay: 600, image: HazelnutPaste, name: 'Mango' },
+
+
     ],
 
     'Choco Chips': [
         { id: 1, delay: 0, image: White, name: 'White Chocolate Chocochips' },
         { id: 2, delay: 200, image: Dark, name: 'Dark Chocolate Chocochips' },
         { id: 3, delay: 400, image: Milk, name: 'Milk Chocolate Chocochips' },
+    ],
+
+    'Cocoa Substitute': [
+        { id: 1, delay: 0, image: White, name: 'Natural' },
+        { id: 2, delay: 200, image: Dark, name: 'Medium' },
+        { id: 3, delay: 400, image: Milk, name: 'Dark' },
+
+        { id: 4, delay: 400, image: Milk, name: 'Formulated Cocoa Substitute' },
+    ],
+
+    'Consumer Chocolates': [
+        { id: 1, delay: 0, image: White, name: 'Centerfilled Chocolates' },
+        { id: 2, delay: 200, image: Dark, name: 'Chocolate Tablets' },
+        { id: 3, delay: 400, image: Milk, name: 'Almond Gratle' },
     ],
 }
 

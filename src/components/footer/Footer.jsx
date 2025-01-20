@@ -10,7 +10,7 @@ const Footer = () => {
 
     const navItems = [
         { id: 1, name: 'Home', link: '/', },
-        { id: 2, name: 'Products', link: '/products/Cake Premixes', },
+        { id: 2, name: 'Products', link: '/products/Premixes', },
         { id: 3, name: 'Services', link: '/services', },
         { id: 4, name: 'About us', link: '/about-us', },
     ]
@@ -20,11 +20,13 @@ const Footer = () => {
     const location = useLocation();
 
     const productsLocations = [
-        '/products/Cake%20Premixes',
-        '/products/Muffin%20Premixes',
-        '/products/Compounds',
+        '/products/Premixes',
+        '/products/Chocolate%20Compounds',
+        '/products/Real%20Chocolates',
         '/products/Choco%20Pastes',
         '/products/Choco%20Chips',
+        '/products/Cocoa%20Substitute',
+        '/products/Consumer%20Chocolates',
     ]
 
     useEffect(() => {
@@ -34,11 +36,13 @@ const Footer = () => {
 
 
     const productsLinks = [
-        { id: 1, name: 'Cake Premix', link: '/products/Cake Premixes', },
-        { id: 2, name: 'Muffin Premix', link: '/products/Muffin Premixes', },
-        { id: 3, name: 'Compounds', link: '/products/Compounds', },
-        { id: 4, name: 'Choco Paste', link: '/products/Choco Pastes', },
-        { id: 6, name: 'Choco Chips', link: '/products/Choco Chips', },
+        { id: 1, name: 'Premix', link: '/products/Premixes?start=0&end=4&title1=Cake Premixes&title2=Muffin Premixes', },   
+        { id: 2, name: 'Chocolate Compounds', link: '/products/Chocolate Compounds?start=0&end=2&title1=Chocolate Compounds&title2=Flavoured Compounds', },
+        { id: 3, name: 'Real Chocolates', link: '/products/Real Chocolates?start=0&end=5&title1=Real Chocolates' },
+        { id: 4, name: 'Choco Paste', link: '/products/Choco Pastes?start=0&end=3&title1=Choco Pastes&title2=Flavoured Choco Pastes', },
+        { id: 5, name: 'Choco Chips', link: '/products/Choco Chips?start=0&end=3&title1=Choco Chips', },
+        { id: 6, name: 'Cocoa Substitute', link: '/products/Cocoa Substitute?start=0&end=2&title1=Carob Powder&title2=Formulated Cocoa Substitute', },
+        { id: 7, name: 'Consumer Chocolates', link: '/products/Consumer Chocolates?start=0&end=2&title1=Consumer Chocolates', },
     ]
 
     return (
@@ -52,7 +56,7 @@ const Footer = () => {
                             <h3 className="text-lg font-semibold mb-4">Plasti Injmould India Ltd.</h3>
                             <p className="mb-2">Plot No. B1 21, Amalgamated Indl Complex, Asangaon, West Shahapur - 421601</p>
                             <p className="mb-2 flex items-center gap-2"><Mail className='h-5 w-5' /> example@gmail.com</p>
-                            <p className='mb-2 flex items-center gap-2'><Phone className='h-5 w-5' /> Makarand - <strong className='text-red-400'> 8591195815</strong></p>
+                            <p className='mb-2 flex items-center gap-2'><Phone className='h-5 w-5' /> Makarand - <strong className='text-red-400'> 8591195915</strong></p>
                         </div>
 
                         {/* Quick Links */}
@@ -90,7 +94,7 @@ const Footer = () => {
                                                     ? 'text-lg text-red-400'
                                                     : 'text-lg text-[#fbecdf] hover:text-red-400 hover:text-xl transition-all duration-200 ease-in-out'
                                             }>
-                                            <p className='flex items-center'><ChevronRight className='mr-2' />{item.name}</p>
+                                            <p className='flex items-start min-[425px]:items-center'><ChevronRight className='mr-2' />{item.name}</p>
                                         </NavLink>
                                     ))}
                                 </ul>
@@ -99,13 +103,13 @@ const Footer = () => {
                             {/* for large screen  */}
                             <div className='hidden lg:flex space-x-5'>
                                 <ul className="flex flex-col space-y-2">
-                                    {productsLinks.slice(0, 5).map(item => (
+                                    {productsLinks.map(item => (
                                         <NavLink
                                             to={item.link}
                                             key={item.id}
                                             className={({ isActive }) =>
                                                 (isActive )
-                                                    ? 'text-xl lg:text-md xl:text-xl text-red-400'
+                                                    ? 'text-xl lg:text-base xl:text-xl text-red-400'
                                                     : 'text-lg lg:text-sm xl:text-lg text-[#fbecdf] hover:text-red-400 hover:text-xl transition-all duration-200 ease-in-out'
                                             }>
                                             <p className='flex items-center'>{item.name}</p>

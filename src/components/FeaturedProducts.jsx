@@ -64,7 +64,7 @@ const FeaturedProducts = () => {
                             <h1 className='text-4xl font-semibold text-[#fbecdf] uppercase'>featured Products</h1>
                         </Slide>
                         <Slide triggerOnce direction='right'>
-                            <NavLink to='/products/Cake Premixes' className='flex items-center bg-[#fbecdf] text-[#4e3620] font-medium text-lg px-6 py-2 rounded-full  transition-all duration-75 ease-in-out'>View More<FaArrowRight className="h-6 w-6 ml-2" /></NavLink>
+                            <NavLink to='/products/Premixes' className='flex items-center bg-[#fbecdf] text-[#4e3620] font-medium text-lg px-6 py-2 rounded-full  transition-all duration-75 ease-in-out'>View More<FaArrowRight className="h-6 w-6 ml-2" /></NavLink>
                         </Slide>
                     </div>
 
@@ -87,7 +87,7 @@ const FeaturedProducts = () => {
                         {/* View More Button For Small Screens*/}
                         <Slide triggerOnce direction='up'  className='md:hidden w-full sm:col-span-2'>
                         <div>
-                            <NavLink to='/products/Cake Premixes' className='flex items-center justify-center bg-[#fbecdf] text-[#4e3620] font-medium text-lg px-6 py-2 my-4 rounded-full transition-all duration-75 ease-in-out'>View More</NavLink>
+                            <NavLink to='/products/Premixes' className='flex items-center justify-center bg-[#fbecdf] text-[#4e3620] font-medium text-lg px-6 py-2 my-4 rounded-full transition-all duration-75 ease-in-out'>View More</NavLink>
                         </div>
                         </Slide>
 
