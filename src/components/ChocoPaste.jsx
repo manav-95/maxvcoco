@@ -25,7 +25,7 @@ const ChocoPaste = () => {
     ]
     return (
         <>
-            <div className='w-full bg-[#fbecdf] py-14 poppins-regular'>
+            <div className='w-full bg-gradient-to-b from-[#FFEDD5] to-[#FECACA] py-14 poppins-regular'>
                 <div className='max-w-7xl container mx-auto px-4'>
 
                     {/* Choco Paste , Choco Dip & Sprade */}

@@ -29,7 +29,7 @@ const Navbar = () => {
 
     const navItems = [
         { id: 1, name: 'Home', link: '/', },
-        { id: 2, name: 'Products', link: '/products/Premixes', },
+        { id: 2, name: 'Products', link: '/products/Premixes?start=0&end=4&title1=Cake Premixes&title2=Muffin Premixes', },
         { id: 3, name: 'Services', link: '/services', },
         { id: 4, name: 'About us', link: '/about-us', },
     ]

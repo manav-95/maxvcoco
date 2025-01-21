@@ -6,7 +6,7 @@ import Baking_Process from '../assets/baking-process.jpg'
 
 const DetailsCards = () => {
     return (
-        <div className='w-full bg-[#fbecdf]'>
+        <div className='w-full bg-gradient-to-b from-[#FFEDD5] to-[#FECACA]'>
             <div className="max-w-7xl container mx-auto px-4 ">
 
 
@@ -39,7 +39,7 @@ const DetailsCards = () => {
                                             <li>Waffle Premix</li>
                                         </ul>
                                         <NavLink
-                                        to={'products/Premixes'}
+                                        to={'/products/Premixes?start=0&end=4&title1=Cake Premixes&title2=Muffin Premixes'}
                                         className="px-6 py-3 bg-[#fbecdf] text-[#4E3620] rounded-lg font-semibold transition-colors duration-200">
                                             Explore Our Products
                                         </NavLink>

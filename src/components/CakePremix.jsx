@@ -2,9 +2,9 @@ import React from 'react'
 import { NavLink } from 'react-router-dom';
 import { Zoom, Slide } from 'react-awesome-reveal'
 
-import Vanila from '../assets/cake-premix-images/vanila.png'
-import Velvet from '../assets/cake-premix-images/red-velvet.png'
-import Chocolate from '../assets/cake-premix-images/chocolate-cake-4.png'
+import Chocolate from '../assets/cake-premix-images/chocolate-bread.png'
+import Vanila from '../assets/cake-premix-images/vanilla-bread-2.png'
+import Velvet from '../assets/cake-premix-images/red-velvet-bread.png'
 import SprinklesBg from '../assets/sprinkles-bg.png'
 import ChocolateBG from '../assets/chocolate-bg.jpg'
 
@@ -58,7 +58,7 @@ const CakePremix = () => {
                         <Zoom triggerOnce delay={premix.delay} className={` overflow-hidden`}>
                             <div key={premix.id} className={`group ${premix.flex} items-center justify-center`}>
                                 <div className='md:w-1/3'>
-                                    <img src={premix.image} alt={premix.title} className={`md:h-[190px] lg:h-[240px] xl:h-[300px] object-cover`}/>
+                                    <img src={premix.image} alt={premix.title} className={`md:h-[190px] lg:h-[240px] xl:h-[300px] object-contain object-center`}/>
                                 </div>
                                 <div className="md:w-1/2 p-4">
                                     <h3 className="font-semibold text-xl min-[425px]:text-2xl md:text-2xl text-center mb-3 bg-[#FDF6F0] py-1 rounded text-[#4E3620] group-hover:bg-[#4E3620] group-hover:text-[#FDF6F0] border border-transparent group-hover:border-[#FDF6F0] transition-all duration-200 ease-in-out">{premix.title}</h3>

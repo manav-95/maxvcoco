@@ -8,7 +8,7 @@ import { Fade, Slide, Zoom } from 'react-awesome-reveal'
 import HeroImage from '../assets/hero-images/products-hero-bg.jpg'
 import ServicesHeroBg from '../assets/hero-images/services-hero-bg.jpg'
 
-import { useNavigate, useParams, useSearchParams } from 'react-router-dom';
+import { useNavigate, useParams, useSearchParams, Link } from 'react-router-dom';
 
 const Products = () => {
 
@@ -19,7 +19,7 @@ const Products = () => {
   const [searchParams] = useSearchParams();
   const start = parseInt(searchParams.get("start") || "0", 10); // Default to 0 if not provided
   const end = parseInt(searchParams.get("end") || "4", 10); // Default to 4 if not provided
-  const title1 = searchParams.get("title1"); 
+  const title1 = searchParams.get("title1");
   const title2 = searchParams.get("title2");
 
 
@@ -35,47 +35,55 @@ const Products = () => {
     setDropdownOpen(!dropdownOpen)
   }
 
-  useEffect(() => {
+  const handleCategoryChange = (newCategory) => {
+    setSelectedCategory(newCategory); // Update the selected category state
+    navigate(`/products/${newCategory}`); // Navigate to the category route
+  };
+
+
+  const reloadProducts = (category) => {
     switch (category) {
       case "Premixes":
-        setSelectedCategory(categories[0])
-        setFilteredProducts(products['Premixes'])
-        navigate(`/products/Premixes?start=0&end=4&title1=Cake Premixes&title2=Muffin Premixes`)
+        setFilteredProducts(products["Premixes"]);
+        navigate(`/products/Premixes?start=0&end=4&title1=Cake Premixes&title2=Muffin Premixes`);
         break;
       case "Chocolate Compounds":
-        setSelectedCategory(categories[1])
-        setFilteredProducts(products['Chocolate Compounds'])
-        navigate(`/products/Chocolate Compounds?start=0&end=2&title1=Chocolate Compounds&title2=Flavoured Compounds`)
+        setFilteredProducts(products["Chocolate Compounds"]);
+        navigate(`/products/Chocolate Compounds?start=0&end=2&title1=Chocolate Compounds&title2=Flavoured Chocolate Compounds`);
         break;
       case "Real Chocolates":
-        setSelectedCategory(categories[2])
-        setFilteredProducts(products['Real Chocolates'])
-        navigate(`/products/Real Chocolates?start=0&end=5&title1=Real Chocolates`)
+        setFilteredProducts(products["Real Chocolates"]);
+        navigate(`/products/Real Chocolates?start=0&end=5&title1=Real Chocolates`);
         break;
       case "Choco Pastes":
-        setSelectedCategory(categories[3])
-        setFilteredProducts(products['Choco Pastes'])
-        navigate(`/products/Choco Pastes?start=0&end=3&title1=Choco Pastes&title2=Flavoured Choco Pastes`)
+        setFilteredProducts(products["Choco Pastes"]);
+        navigate(`/products/Choco Pastes?start=0&end=3&title1=Choco Pastes&title2=Flavoured Choco Pastes`);
         break;
       case "Choco Chips":
-        setSelectedCategory(categories[4])
-        setFilteredProducts(products['Choco Chips'])
-        navigate(`/products/Choco Chips?start=0&end=3&title1=Choco Chips`)
+        setFilteredProducts(products["Choco Chips"]);
+        navigate(`/products/Choco Chips?start=0&end=3&title1=Choco Chips`);
         break;
       case "Cocoa Substitute":
-        setSelectedCategory(categories[5])
-        setFilteredProducts(products['Cocoa Substitute'])
-        navigate(`/products/Cocoa Substitute?start=0&end=2&title1=Carob Powder&title2=Formulated Cocoa Substitute`)
+        setFilteredProducts(products["Cocoa Substitute"]);
+        navigate(`/products/Cocoa Substitute?start=0&end=2&title1=Carob Powder&title2=Formulated Cocoa Substitute`);
         break;
       case "Consumer Chocolates":
-        setSelectedCategory(categories[6])
-        setFilteredProducts(products['Consumer Chocolates'])
-        navigate(`/products/Consumer Chocolates?start=0&end=2&title1=Consumer Chocolates`)
+        setFilteredProducts(products["Consumer Chocolates"]);
+        navigate(`/products/Consumer Chocolates?start=0&end=2&title1=Consumer Chocolates`);
         break;
       default:
         break;
     }
-  }, [category])
+  };
+
+  useEffect(() => {
+    if (category) {
+      setSelectedCategory(category); // Sync the selected category with the current URL
+      reloadProducts(category);      // Reload products for the new category
+    }
+  }, [category]);
+
+
 
 
   const setupGrid = (start, end) => {
@@ -87,6 +95,10 @@ const Products = () => {
         key={product.id}
         className='bg-[#fbecdf] p-3 shadow-lg rounded-lg hover:shadow-xl'
       >
+        <Link
+        to={`/products/product-details/${product.name}`}
+        >
+
         <div
           className=''
         >
@@ -103,6 +115,7 @@ const Products = () => {
             <h3 className="text-lg font-semibold text-[#fff] bg-[#4e3620] p-2 rounded-md ">{product.name}</h3>
           </div>
         </div>
+        </Link>
       </Slide>
     ))
   }
@@ -150,6 +163,7 @@ const Products = () => {
                           : 'bg-[#fbecdf]  font-medium text-[#4e3620]'
                           }`}
                         onClick={() => { navigate(`/products/${category}`); setDropdownOpen(false) }}
+                        disabled={selectedCategory === category}
                       >
                         {category}
                       </button>
@@ -164,18 +178,20 @@ const Products = () => {
 
             <Slide triggerOnce direction='up'>
               <div className="hidden lg:grid content-center gap-3 lg:mr-4">
-                {categories.map(category => (
+                {categories.map((cat, index) => (
                   <button
-                    key={category}
-                    className={`px-6 py-3 rounded ${selectedCategory === category
-                      ? 'bg-red-400  font-medium text-white'
-                      : 'bg-[#fbecdf]  font-medium text-[#4e3620]'
+                    key={index}
+                    className={`px-6 py-3 rounded ${selectedCategory === cat
+                        ? "bg-red-400 font-medium text-white"
+                        : "bg-[#fbecdf] font-medium text-[#4e3620]"
                       }`}
-                    onClick={() => navigate(`/products/${category}`)}
+                    onClick={() => handleCategoryChange(cat)} // Trigger category change
+                    disabled={selectedCategory === cat} 
                   >
-                    {category}
+                    {cat}
                   </button>
                 ))}
+
               </div>
             </Slide>
           </div>
@@ -186,7 +202,7 @@ const Products = () => {
           <div className='col-span-12 lg:col-span-8 xl:col-span-9'>
             <section className="w-full poppins-regular">
 
-              <h1 className='text-3xl font-semibold text-[#fbecdf] mb-6 text-center sm:text-left'>{title1 ? title1 : "Category 1"}</h1>
+              <h1 className='text-3xl font-semibold text-[#fbecdf] mb-6 text-center sm:text-left'>{title1}</h1>
               <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-8">
                 {setupGrid(start, end + 1)}
               </div>

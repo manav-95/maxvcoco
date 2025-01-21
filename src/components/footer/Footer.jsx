@@ -10,7 +10,7 @@ const Footer = () => {
 
     const navItems = [
         { id: 1, name: 'Home', link: '/', },
-        { id: 2, name: 'Products', link: '/products/Premixes', },
+        { id: 2, name: 'Products', link: '/products/Premixes?start=0&end=4&title1=Cake Premixes&title2=Muffin Premixes', },
         { id: 3, name: 'Services', link: '/services', },
         { id: 4, name: 'About us', link: '/about-us', },
     ]
@@ -37,7 +37,7 @@ const Footer = () => {
 
     const productsLinks = [
         { id: 1, name: 'Premix', link: '/products/Premixes?start=0&end=4&title1=Cake Premixes&title2=Muffin Premixes', },   
-        { id: 2, name: 'Chocolate Compounds', link: '/products/Chocolate Compounds?start=0&end=2&title1=Chocolate Compounds&title2=Flavoured Compounds', },
+        { id: 2, name: 'Chocolate Compounds', link: '/products/Chocolate Compounds?start=0&end=2&title1=Chocolate Compounds&title2=Flavoured Chocolate Compounds', },
         { id: 3, name: 'Real Chocolates', link: '/products/Real Chocolates?start=0&end=5&title1=Real Chocolates' },
         { id: 4, name: 'Choco Paste', link: '/products/Choco Pastes?start=0&end=3&title1=Choco Pastes&title2=Flavoured Choco Pastes', },
         { id: 5, name: 'Choco Chips', link: '/products/Choco Chips?start=0&end=3&title1=Choco Chips', },
@@ -56,7 +56,7 @@ const Footer = () => {
                             <h3 className="text-lg font-semibold mb-4">Plasti Injmould India Ltd.</h3>
                             <p className="mb-2">Plot No. B1 21, Amalgamated Indl Complex, Asangaon, West Shahapur - 421601</p>
                             <p className="mb-2 flex items-center gap-2"><Mail className='h-5 w-5' /> example@gmail.com</p>
-                            <p className='mb-2 flex items-center gap-2'><Phone className='h-5 w-5' /> Makarand - <strong className='text-red-400'> 8591195915</strong></p>
+                            <p className='mb-2 flex items-center gap-2'><Phone className='h-5 w-5' /> Makarand - <strong className='text-red-400 tracking-wider'> 8591195915</strong></p>
                         </div>
 
                         {/* Quick Links */}

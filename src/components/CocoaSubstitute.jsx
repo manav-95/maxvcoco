@@ -7,7 +7,7 @@ import CocoaSubstituteImage from '../assets/cocoa-images/cocoa-substitute.jpg'
 const CocoaSubstitute = () => {
     return (
         <>
-            <div className='w-full bg-[#fbecdf] poppins-regular'>
+            <div className='w-full bg-gradient-to-b from-[#FFEDD5] to-[#FECACA] poppins-regular'>
                 <div className='max-w-7xl mx-auto container px-4 lg:px-10 py-16'>
                     <div className='flex flex-col space-y-10 lg:space-y-0 lg:flex-row-reverse lg:items-center lg:justify-between  lg:gap-x-14'>
 
