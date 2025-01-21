@@ -5,7 +5,6 @@ import { FaChevronDown } from "react-icons/fa";
 
 import { Fade, Slide, Zoom } from 'react-awesome-reveal'
 
-import HeroImage from '../assets/hero-images/products-hero-bg.jpg'
 import ServicesHeroBg from '../assets/hero-images/services-hero-bg.jpg'
 
 import { useNavigate, useParams, useSearchParams, Link } from 'react-router-dom';

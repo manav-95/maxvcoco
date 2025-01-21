@@ -1,13 +1,7 @@
 import React from 'react'
-import products from '../data/products'
 import { FaArrowRight } from "react-icons/fa6";
 import { NavLink } from 'react-router-dom';
 import { Zoom, Slide } from 'react-awesome-reveal'
-
-import Chocolate_Slabs from '../assets/products-images/chocolate-slabs-2.jpg'
-import Dark_Chocolate_Compound from '../assets/products-images/dark-chocolate-compound.jpg'
-import White_Chocolate_Compound from '../assets/products-images/white-chocolate-compound.png'
-import Chocolate_Paste from '../assets/chcoc-paste-images/choco-paste-example.png'
 
 import DarkChocolateCompound from '../assets/feature-products-images/dark-chocolate-compound.png'
 import ChocolateSlab from '../assets/feature-products-images/milk-chocolate.png'
