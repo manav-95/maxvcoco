@@ -2,10 +2,16 @@ import React from 'react';
 
 import { Fade, Zoom, Slide } from 'react-awesome-reveal'
 
+import { GoDotFill } from "react-icons/go";
+
 import AboutHeroBg from '../assets/hero-images/about-hero-bg.jpeg';
 import ServicesHeroBg from '../assets/hero-images/services-hero-bg.jpg'
 
 import Mission from '../assets/about-images/mission-image.png';
+
+
+import Who_We_Are from '../assets/about-images/who-we-are-image.jpg'
+import Vision from '../assets/about-images/our-vision.jpg'
 
 import ProfileExample from '../assets/profile-example.jpeg'
 
@@ -52,8 +58,8 @@ const About = () => {
       </Fade>
 
 
-      {/* Mission Section */}
-      <div className='w-full bg-[#4E3620] text-[#FDF6F0]'>
+      {/*Old Mission Section */}
+      {/* <div className='w-full bg-[#4E3620] text-[#FDF6F0]'>
         <section className="py-6 lg:py-16 px-4 max-w-7xl mx-auto poppins-regular">
           <div className="flex flex-col-reverse items-center justify-center space-y-12 lg:flex-row lg:space-y-0 lg:items-center lg:justify-between">
 
@@ -85,7 +91,87 @@ const About = () => {
 
           </div>
         </section>
-      </div>
+      </div> */}
+
+      {/* Who We Are */}
+      <section className="py-10 lg:py-14 px-4 bg-[#4E3620] text-[#FDF6F0]">
+        <div className="max-w-7xl container mx-auto">
+          <h2 className="text-5xl font-bold text-brown-800 mb-8 text-center kanit-semibold">Who We Are</h2>
+          <div className="flex flex-col lg:flex-row items-center justify-center">
+            <div className="lg:w-1/2 mb-8 lg:mb-0 px-4 sm:px-10 md:px-10 lg:px-0">
+              <img src={Who_We_Are} alt="Cocoa beans" className="rounded-xl object-center object-cover shadow-lg" />
+            </div>
+            <div className="flex flex-col space-y-6 px-4 sm:px-10 md:px-10 lg:px-0 lg:w-1/2 lg:pl-12">
+              <p className="text-lg font-medium leading-relaxed">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate voluptate, quam exercitationem ut, a modi quibusdam soluta laudantium ea enim saepe illo dolore id odio incidunt iure! Modi harum dicta, recusandae quaerat debitis, temporibus nisi quisquam iure eius facilis nemo cupiditate aut ullam porro minus in sunt reprehenderit obcaecati non, deleniti quam. At laboriosam, repellat quibusdam ullam dolore atque aut!
+              </p>
+              <p className='text-lg font-medium leading-relaxed'>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, debitis architecto. Ipsa hic cumque beatae incidunt at earum doloribus impedit corrupti libero cupiditate non minima atque, id animi, inventore sit.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Mission  */}
+      <section className="py-10 lg:py-14 px-4 bg-[#FDF6F0]">
+        <div className="max-w-7xl container mx-auto">
+          <h2 className="text-5xl font-bold mb-8 text-center text-[#4E3620] kanit-semibold">Our Mission</h2>
+          <div className="bg-[#4E3620] text-[#fdf6f0] rounded-lg shadow-lg p-8 sm:p-12">
+            <p className="text-lg font-medium leading-relaxed">
+              Our mission is to spread joy and indulgence through our exceptional chocolates while promoting sustainable
+              and ethical practices in the cocoa industry. We strive to create a positive impact on the lives of cocoa
+              farmers, our customers, and the environment by:
+            </p>
+            {/* <ul className="mt-6 space-y-4 list-disc list-inside text-lg font-medium">
+              <li>Sourcing the finest, ethically-produced cocoa beans</li>
+              <li>Crafting innovative and delightful chocolate creations</li>
+              <li>Educating consumers about the art and science of chocolate-making</li>
+              <li>Supporting fair trade practices and sustainable agriculture</li>
+              <li>Continuously improving our production processes to minimize environmental impact</li>
+            </ul> */}
+             <div className='mt-6 flex flex-col space-y-4 text-lg font-medium'>
+                <p className='flex items-start justify-start'><GoDotFill className='-mt-0.5 mr-2 h-8 w-8 min-[425px]:h-4 min[425px]:w-4 min-[425px]:mt-1 xl:mt-1.5'/>Sourcing the finest, ethically-produced cocoa beans</p>
+                <p className='flex items-start justify-start'><GoDotFill className='-mt-0.5 mr-2 h-8 w-8 min-[425px]:h-4 min[425px]:w-4 min-[425px]:mt-1 xl:mt-1.5'/>Crafting innovative and delightful chocolate creations</p>
+                <p className='flex items-start justify-start'><GoDotFill className='-mt-0.5 mr-2 h-8 w-8 min-[425px]:h-4 min[425px]:w-4 min-[425px]:mt-1 xl:mt-1.5'/>Educating consumers about the art and science of chocolate-making</p>
+                <p className='flex items-start justify-start'><GoDotFill className='-mt-0.5 mr-2 h-8 w-8 min-[425px]:h-4 min[425px]:w-4 min-[425px]:mt-1 xl:mt-1.5'/>Supporting fair trade practices and sustainable agriculture</p>
+                <p className='flex items-start justify-start'><GoDotFill className='-mt-0.5 mr-2 h-8 w-8 min-[425px]:h-4 min[425px]:w-4 min-[425px]:mt-1 xl:mt-1.5'/>Continuously improving our production processes to minimize environmental impact</p>
+              </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Vision  */}
+      <section className="pb-10 lg:pb-14 px-4 bg-[#FDF6F0]">
+        <div className="max-w-7xl container mx-auto">
+          <h2 className="text-5xl font-bold text-[#4E3620] mb-8 text-center kanit-semibold">Our Vision</h2>
+          <div className="bg-[#4E3620] text-[#fdf6f0] rounded-lg shadow-lg p-8 sm:p-12 flex flex-col lg:flex-row items-center justify-between">
+            <div className="lg:w-1/2 mb-10 lg:mb-0 lg:pr-12">
+              <p className="text-lg font-medium leading-relaxed">
+                We envision a world where chocolate is not just a treat, but a transformative experience that connects
+                people, cultures, and nature. Our vision is to:
+              </p>
+              {/* <ul className="mt-6 space-y-4 list-disc list-inside text-lg font-medium">
+                <li>Become the most beloved and respected chocolate brand worldwide</li>
+                <li>Lead the industry in sustainable and innovative chocolate production</li>
+                <li>Inspire a global community of chocolate enthusiasts and conscious consumers</li>
+                <li>Create a positive ripple effect from bean to bar, improving lives and ecosystems</li>
+              </ul> */}
+              <div className='mt-6 flex flex-col space-y-4 text-lg font-medium'>
+                <p className='flex items-start justify-start'><GoDotFill className='-mt-0.5 mr-2 h-8 w-8 min-[425px]:h-4 min[425px]:w-4 min-[425px]:mt-1 xl:mt-1.5'/>Become the most beloved and respected chocolate brand worldwide</p>
+                <p className='flex items-start justify-start'><GoDotFill className='-mt-0.5 mr-2 h-8 w-8 min-[425px]:h-4 min[425px]:w-4 min-[425px]:mt-1 xl:mt-1.5'/>Lead the industry in sustainable and innovative chocolate production</p>
+                <p className='flex items-start justify-start'><GoDotFill className='-mt-0.5 mr-2 h-8 w-8 min-[425px]:h-4 min[425px]:w-4 min-[425px]:mt-1 xl:mt-1.5'/>Inspire a global community of chocolate enthusiasts and conscious consumers</p>
+                <p className='flex items-start justify-start'><GoDotFill className='-mt-0.5 mr-2 h-8 w-8 min-[425px]:h-4 min[425px]:w-4 min-[425px]:mt-1 xl:mt-1.5'/>Create a positive ripple effect from bean to bar, improving lives and ecosystems</p>
+              </div>
+            </div>
+            <div className="lg:w-1/2">
+              <img src={Vision} alt="Chocolate assortment" className="object-center object-cover rounded-lg shadow-lg" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+
 
       {/* VALUES SECTION */}
       <section className='w-full px-4 py-10 bg-[#4E3620] text-[#FDF6F0] poppins-regular'>
@@ -95,7 +181,7 @@ const About = () => {
             <h2 className="text-5xl  rounded-lg font-extrabold text-center mb-8 kanit-semibold">Our Core Values</h2>
           </Zoom>
 
-          <div className='grid grid-cols-1 sm:grid-cols-12 lg:grid-cols-12 gap-10 mt-16'>
+          <div className='grid grid-cols-1 sm:grid-cols-12 lg:grid-cols-12 gap-10 mt-16 sm:px-4'>
             {ourValues.map(value => (
               <Zoom delay={value.delay} duration={1200} triggerOnce className={`${value.colSpan} group flex flex-col justify-center items-center text-center bg-[#fdf6f0] text-[#664436] hover:bg-[#FDF6F0] p-6 rounded-lg shadow-lg md:bg-[#664436] md:bg-opacity-50 transition-all duration-200 ease-in-out`}>
                 <div key={value.id} className='flex flex-col justify-center items-center text-center'>
@@ -119,7 +205,7 @@ const About = () => {
             <h2 className="text-4xl font-bold text-center">Meet Our Team</h2>
           </Slide>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 py-16">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 py-16 sm:px-4">
             {teamMembers.map(member => (
               <Slide triggerOnce direction='up' delay={member.delay}>
                 <div
