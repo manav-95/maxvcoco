@@ -66,8 +66,8 @@ const FeaturedProducts = () => {
                         {featuredProducts.map((product, index) => (
                             <Zoom triggerOnce delay={product.delay} className={`flex flex-col justify-center items-center bg-[#fbecdf] rounded-lg shadow-md overflow-hidden ${index === 3 ? 'lg:hidden' : ''}`}>
                                 <div key={product.id}>
-                                    <div className="p-2">
-                                        <img src={product.image} alt={product.name} className="w-full h-60 object-contain bg-[#4e3620] bg-opacity-10 rounded-lg" />
+                                    <div className="p-2.5">
+                                        <img src={product.image} alt={product.name} className="w-full h-60 object-contain bg-[#855141] bg-opacity-10 rounded-lg" />
                                     </div>
 
                                     <div className="p-3">

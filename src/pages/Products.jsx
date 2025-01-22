@@ -106,7 +106,7 @@ const Products = () => {
             <img
               src={product.image}
               alt={product.name}
-              className={`h-56 w-full object-contain bg-[#4e3620] bg-opacity-10 rounded-lg`}
+              className={`h-56 w-full object-contain bg-[#855141] bg-opacity-10 rounded-lg`}
             />
           </div>
 

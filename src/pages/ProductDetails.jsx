@@ -33,7 +33,7 @@ const ProductDetails = () => {
         return (
             <div className="text-center py-20">
                 <h2 className="text-3xl font-semibold text-red-500">Product Not Found</h2>
-                <Link to="/products" className="mt-4 text-lg text-blue-500 hover:text-blue-700">Go Back to Products</Link>
+                <Link to="/products/Premixes?start=0&end=4&title1=Cake Premixes&title2=Muffin Premixes" className="mt-4 text-lg text-blue-500 hover:text-blue-700">Go Back to Products</Link>
             </div>
         );
     }
