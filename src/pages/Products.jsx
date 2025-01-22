@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import products from '../data/productPageData';
 
-import { FaChevronDown } from "react-icons/fa";
+import { motion } from "motion/react"
 
-import { Fade, Slide, Zoom } from 'react-awesome-reveal'
+import { FaChevronDown } from "react-icons/fa";
 
 import ServicesHeroBg from '../assets/hero-images/services-hero-bg.jpg'
 
@@ -16,8 +16,8 @@ const Products = () => {
 
 
   const [searchParams] = useSearchParams();
-  const start = parseInt(searchParams.get("start") || "0", 10); // Default to 0 if not provided
-  const end = parseInt(searchParams.get("end") || "4", 10); // Default to 4 if not provided
+  const start = parseInt(searchParams.get("start") || "0", "10"); // Default to 0 if not provided
+  const end = parseInt(searchParams.get("end") || "4", "10"); // Default to 4 if not provided
   const title1 = searchParams.get("title1");
   const title2 = searchParams.get("title2");
 
@@ -82,24 +82,28 @@ const Products = () => {
     }
   }, [category]);
 
-
+  const slideFromBottom = {
+    hidden: { opacity: 0, y: 50 }, // Start below the view
+    visible: { opacity: 1, y: 0 }, // Slide to its position
+    exit: { opacity: 0, y: 50 }, // Slide out downward (optional)
+  };
 
 
   const setupGrid = (start, end) => {
     return filteredProducts.slice(start, end).map((product) => (
-      <Slide
-        delay={product.delay}
-        triggerOnce
-        direction='up'
-        key={product.id}
-        className='bg-[#fbecdf] p-3 shadow-lg rounded-lg hover:shadow-xl'
-      >
+     
         <Link
         to={`/products/product-details/${product.name}`}
         >
 
-        <div
-          className=''
+        <motion.div
+         variants={slideFromBottom}
+         initial="hidden"
+         whileInView="visible"
+         viewport={{ once: true, amount: 0.2 }}
+         transition={{ duration: 1, ease: "easeInOut" }} 
+        key={product.id}
+           className='bg-[#fbecdf] p-3 shadow-lg rounded-lg hover:shadow-xl'
         >
 
           <div className=''>
@@ -113,15 +117,15 @@ const Products = () => {
           <div className="w-full text-center mt-3">
             <h3 className="text-lg font-semibold text-[#fff] bg-[#4e3620] p-2 rounded-md ">{product.name}</h3>
           </div>
-        </div>
+        </motion.div>
         </Link>
-      </Slide>
+     
     ))
   }
 
   return (
     <>
-      <Fade triggerOnce duration={1200}>
+      
         <header
           style={{ backgroundImage: `url(${ServicesHeroBg})` }}
           className="relative bg-cover bg-center h-[300px] md:h-[320px] lg:h-[340px] flex items-center justify-center text-center text-white kanit-regular"
@@ -137,7 +141,7 @@ const Products = () => {
           </div>
         </header>
 
-      </Fade>
+     
 
       <div className='w-full bg-[#4e3620] poppins-regular'>
         <div className='max-w-7xl container mx-auto px-4 py-2 pb-8 lg:py-10 grid grid-cols-12 gap-4'>
@@ -145,7 +149,6 @@ const Products = () => {
 
           {/* For Small Screens  */}
           <div className='col-span-12 lg:col-span-4 xl:col-span-3'>
-            <Slide triggerOnce direction='up' duration={1200} className='lg:hidden mt-4'>
               <div className='lg:hidden mt-4'>
                 <button onClick={toggleDropdown} className='w-full flex justify-between items-center text-xl text-[#4E3620] font-semibold bg-[#fbecdf] py-3 px-4 rounded'>
                   Select Category
@@ -170,13 +173,19 @@ const Products = () => {
                   </div>
                 }
               </div>
-            </Slide>
+           
 
 
             {/* left Side For Categories  */}
 
-            <Slide triggerOnce direction='up'>
-              <div className="hidden lg:grid content-center gap-3 lg:mr-4">
+            
+              <motion.div
+              variants={slideFromBottom}
+              initial="hidden"
+              animate="visible"
+              exit="exit"
+              transition={{ duration: 1, ease: "easeInOut" }} 
+              className="hidden lg:grid content-center gap-3 lg:mr-4">
                 {categories.map((cat, index) => (
                   <button
                     key={index}
@@ -191,8 +200,8 @@ const Products = () => {
                   </button>
                 ))}
 
-              </div>
-            </Slide>
+              </motion.div>
+           
           </div>
 
 
