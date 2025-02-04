@@ -4,6 +4,9 @@ import { Fade, Zoom, Slide } from 'react-awesome-reveal'
 
 import { GoDotFill } from "react-icons/go";
 
+import { motion } from "motion/react"
+
+
 import AboutHeroBg from '../assets/hero-images/about-hero-bg.jpeg';
 import ServicesHeroBg from '../assets/hero-images/services-hero-bg.jpg'
 
@@ -36,6 +39,12 @@ const About = () => {
     { id: 2, delay: 200, image: ProfileExample, name: 'Member 2', role: 'Head of Marketing', },
     { id: 3, delay: 400, image: ProfileExample, name: 'Member 3', role: 'Product Manager', }
   ]
+
+  const slideFromBottom = {
+    hidden: { opacity: 0, y: 50 }, // Start below the view
+    visible: { opacity: 1, y: 0 }, // Slide to its position
+    exit: { opacity: 0, y: 50 }, // Slide out downward (optional)
+  };
 
   return (
     <div className=" min-h-screen poppins-regular">
@@ -97,18 +106,54 @@ const About = () => {
       <section className="py-10 lg:py-14 px-4 bg-[#4E3620] text-[#FDF6F0]">
         <div className="max-w-7xl container mx-auto">
           <h2 className="text-5xl font-bold text-brown-800 mb-8 text-center kanit-semibold">Who We Are</h2>
-          <div className="flex flex-col lg:flex-row items-center justify-center">
-            <div className="lg:w-1/2 mb-8 lg:mb-0 px-4 sm:px-10 md:px-10 lg:px-0">
-              <img src={Who_We_Are} alt="Cocoa beans" className="rounded-xl object-center object-cover shadow-lg" />
-            </div>
-            <div className="flex flex-col space-y-6 px-4 sm:px-10 md:px-10 lg:px-0 lg:w-1/2 lg:pl-12">
-              <p className="text-lg font-medium leading-relaxed">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate voluptate, quam exercitationem ut, a modi quibusdam soluta laudantium ea enim saepe illo dolore id odio incidunt iure! Modi harum dicta, recusandae quaerat debitis, temporibus nisi quisquam iure eius facilis nemo cupiditate aut ullam porro minus in sunt reprehenderit obcaecati non, deleniti quam. At laboriosam, repellat quibusdam ullam dolore atque aut!
-              </p>
-              <p className='text-lg font-medium leading-relaxed'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, debitis architecto. Ipsa hic cumque beatae incidunt at earum doloribus impedit corrupti libero cupiditate non minima atque, id animi, inventore sit.
-              </p>
-            </div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-8 items-center lg:py-4">
+            <motion.div
+              variants={slideFromBottom}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 1, ease: "easeInOut" }}
+              className="w-full h-full px-4 sm:px-10 md:px-10 lg:px-0">
+              <img
+                src={Who_We_Are}
+                alt="Cocoa beans"
+                className="rounded-xl object-center object-cover aspect-auto shadow-lg w-full h-full"
+
+              />
+            </motion.div>
+            <motion.div
+              variants={slideFromBottom}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 1, delay: 0.3, ease: "easeInOut" }}
+              className="flex flex-col space-y-6 px-4 sm:px-10 md:px-10 lg:px-0 lg:pl-12">
+              <div>
+                <h1 className='text-xl font-semibold mb-1.5'>FOUNDER AND CEO</h1>
+                <p className="text-base font-medium leading-relaxed">
+                  Harish Kothari is a distinguished entrepreneur from Mumbai. A self-made visionary, he built his food
+                  processing business from the ground up. With a strong consumer-focused approach, he excels in
+                  creating delicious chocolate formulations. Driven by passion and enthusiasm, he is always eager to
+                  support and uplift others.
+                </p>
+              </div>
+              <div>
+                <h1 className='text-xl font-semibold mb-1.5'>CHIEF TECHNOLOGY OFFICER</h1>
+                <p className='text-base font-medium leading-relaxed'>
+                  Makarand Parturkar is a seasoned professional in food processing with an M. Tech in Food Sciences
+                  from Marathwada Agricultural University and an MBA from Birla Institute of Technology. He has
+                  played a key role in developing indulgent yet nutritious food products, combining expertise with
+                  innovation.
+                </p>
+              </div>
+              <div>
+                <h1 className='text-xl font-semibold mb-1.5'>DIRECTOR</h1>
+                <p className='text-base font-medium leading-relaxed'>
+                  Meghana Kothari, a distinguished nutrition expert and accomplished businesswoman, has ventured
+                  into the hotel industry and cocoa imports in India, catering to multinational companies.
+                </p>
+              </div>
+            </motion.div>
           </div>
         </div>
       </section>
@@ -117,11 +162,17 @@ const About = () => {
       <section className="py-10 lg:py-14 px-4 bg-[#FDF6F0]">
         <div className="max-w-7xl container mx-auto">
           <h2 className="text-5xl font-bold mb-8 text-center text-[#4E3620] kanit-semibold">Our Mission</h2>
-          <div className="bg-[#4E3620] text-[#fdf6f0] rounded-lg shadow-lg p-8 sm:p-12">
+          <motion.div
+            variants={slideFromBottom}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 1, delay: 0.3, ease: "easeInOut" }}
+            className="bg-[#4E3620] text-[#fdf6f0] rounded-lg shadow-lg p-8 sm:p-12">
             <p className="text-lg font-medium leading-relaxed">
-              Our mission is to spread joy and indulgence through our exceptional chocolates while promoting sustainable
-              and ethical practices in the cocoa industry. We strive to create a positive impact on the lives of cocoa
-              farmers, our customers, and the environment by:
+              At MAXVCOCO, we deliver maximum value through premium chocolate solutions that
+              elevate products, drive business success, and delight consumers. Our commitment to
+              excellence ensures:
             </p>
             {/* <ul className="mt-6 space-y-4 list-disc list-inside text-lg font-medium">
               <li>Sourcing the finest, ethically-produced cocoa beans</li>
@@ -130,14 +181,17 @@ const About = () => {
               <li>Supporting fair trade practices and sustainable agriculture</li>
               <li>Continuously improving our production processes to minimize environmental impact</li>
             </ul> */}
-             <div className='mt-6 flex flex-col space-y-4 text-lg font-medium'>
-                <p className='flex items-start justify-start'><GoDotFill className='-mt-0.5 mr-2 h-8 w-8 min-[425px]:h-4 min[425px]:w-4 min-[425px]:mt-1 xl:mt-1.5'/>Sourcing the finest, ethically-produced cocoa beans</p>
-                <p className='flex items-start justify-start'><GoDotFill className='-mt-0.5 mr-2 h-8 w-8 min-[425px]:h-4 min[425px]:w-4 min-[425px]:mt-1 xl:mt-1.5'/>Crafting innovative and delightful chocolate creations</p>
-                <p className='flex items-start justify-start'><GoDotFill className='-mt-0.5 mr-2 h-8 w-8 min-[425px]:h-4 min[425px]:w-4 min-[425px]:mt-1 xl:mt-1.5'/>Educating consumers about the art and science of chocolate-making</p>
-                <p className='flex items-start justify-start'><GoDotFill className='-mt-0.5 mr-2 h-8 w-8 min-[425px]:h-4 min[425px]:w-4 min-[425px]:mt-1 xl:mt-1.5'/>Supporting fair trade practices and sustainable agriculture</p>
-                <p className='flex items-start justify-start'><GoDotFill className='-mt-0.5 mr-2 h-8 w-8 min-[425px]:h-4 min[425px]:w-4 min-[425px]:mt-1 xl:mt-1.5'/>Continuously improving our production processes to minimize environmental impact</p>
-              </div>
-          </div>
+            <div className='mt-6 flex flex-col space-y-4 text-lg font-medium'>
+              <p className='flex items-start justify-start'><GoDotFill className='h-4 w-4 flex-shrink-0 mt-1 mr-1' />Superior chocolate products designed for impact and indulgence.</p>
+              <p className='flex items-start justify-start'><GoDotFill className='h-4 w-4 flex-shrink-0 mt-1 mr-1' />Innovative, customizable solutions that enhance brand appeal and consumer experience.</p>
+              <p className='flex items-start justify-start'><GoDotFill className='h-4 w-4 flex-shrink-0 mt-1 mr-1' />Expert guidance to help partners create market-leading offerings.</p>
+              <p className='flex items-start justify-start'><GoDotFill className='h-4 w-4 flex-shrink-0 mt-1 mr-1' />Optimized production for efficiency, quality, and scalability.</p>
+              <p className='flex items-start justify-start'><GoDotFill className='h-4 w-4 flex-shrink-0 mt-1 mr-1' />Sustainable practices that balance performance and responsibility.</p>
+            </div>
+            <div className='mt-6'>
+              <p className="text-lg font-medium leading-relaxed" >MAXVCOCO helps businesses create chocolate experiences that captivate and satisfy.</p>
+            </div>
+          </motion.div>
         </div>
       </section>
 
@@ -148,8 +202,10 @@ const About = () => {
           <div className="bg-[#4E3620] text-[#fdf6f0] rounded-lg shadow-lg p-8 sm:p-12 flex flex-col lg:flex-row items-center justify-between">
             <div className="lg:w-1/2 mb-10 lg:mb-0 lg:pr-12">
               <p className="text-lg font-medium leading-relaxed">
-                We envision a world where chocolate is not just a treat, but a transformative experience that connects
-                people, cultures, and nature. Our vision is to:
+                To be the leading partner for businesses seeking premium chocolate solutions that maximize
+                value, drive innovation, and create unforgettable consumer experiences. We envision a future
+                where every product infused with MAXVCOCO chocolate sets new standards of quality,
+                indulgence, and market success.
               </p>
               {/* <ul className="mt-6 space-y-4 list-disc list-inside text-lg font-medium">
                 <li>Become the most beloved and respected chocolate brand worldwide</li>
@@ -158,10 +214,10 @@ const About = () => {
                 <li>Create a positive ripple effect from bean to bar, improving lives and ecosystems</li>
               </ul> */}
               <div className='mt-6 flex flex-col space-y-4 text-lg font-medium'>
-                <p className='flex items-start justify-start'><GoDotFill className='-mt-0.5 mr-2 h-8 w-8 min-[425px]:h-4 min[425px]:w-4 min-[425px]:mt-1 xl:mt-1.5'/>Become the most beloved and respected chocolate brand worldwide</p>
-                <p className='flex items-start justify-start'><GoDotFill className='-mt-0.5 mr-2 h-8 w-8 min-[425px]:h-4 min[425px]:w-4 min-[425px]:mt-1 xl:mt-1.5'/>Lead the industry in sustainable and innovative chocolate production</p>
-                <p className='flex items-start justify-start'><GoDotFill className='-mt-0.5 mr-2 h-8 w-8 min-[425px]:h-4 min[425px]:w-4 min-[425px]:mt-1 xl:mt-1.5'/>Inspire a global community of chocolate enthusiasts and conscious consumers</p>
-                <p className='flex items-start justify-start'><GoDotFill className='-mt-0.5 mr-2 h-8 w-8 min-[425px]:h-4 min[425px]:w-4 min-[425px]:mt-1 xl:mt-1.5'/>Create a positive ripple effect from bean to bar, improving lives and ecosystems</p>
+                <p className='flex items-start justify-start'><GoDotFill className='h-4 w-4 flex-shrink-0 mt-1 mr-1' />Become the most beloved and respected chocolate brand worldwide</p>
+                <p className='flex items-start justify-start'><GoDotFill className='h-4 w-4 flex-shrink-0 mt-1 mr-1' />Lead the industry in sustainable and innovative chocolate production</p>
+                <p className='flex items-start justify-start'><GoDotFill className='h-4 w-4 flex-shrink-0 mt-1 mr-1' />Inspire a global community of chocolate enthusiasts and conscious consumers</p>
+                <p className='flex items-start justify-start'><GoDotFill className='h-4 w-4 flex-shrink-0 mt-1 mr-1' />Create a positive ripple effect from bean to bar, improving lives and ecosystems</p>
               </div>
             </div>
             <div className="lg:w-1/2">

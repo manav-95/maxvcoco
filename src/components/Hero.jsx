@@ -4,6 +4,7 @@ import { Fade, Slide } from 'react-awesome-reveal';
 import HeroBg1 from '../assets/hero-images/home-hero-bg.jpg';
 import HeroBg2 from '../assets/hero-images/home-hero-bg-2.webp';
 import HeroBg3 from '../assets/hero-images/home-hero-bg-3.jpg';
+import HeroBg4 from '../assets/hero-images/home-hero-bg-4.jpeg';
 
 import Logo from '../assets/latest-hero-logo.png'
 
@@ -12,7 +13,7 @@ const Hero = () => {
 
   const heroImages = [
     HeroBg1,
-    HeroBg2,
+    HeroBg4,
     HeroBg3,
   ]
 
