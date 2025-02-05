@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink, useLocation, } from 'react-router-dom'
-import { Facebook, Instagram, Twitter, Youtube, Mail, Phone, ChevronRight } from 'lucide-react';
+import { Facebook, Instagram, Twitter, Youtube, Mail, Phone, LocateFixedIcon, ChevronRight } from 'lucide-react';
 import { Fade } from 'react-awesome-reveal';
 
 
@@ -54,9 +54,9 @@ const Footer = () => {
                         {/* Company Info */}
                         <div className='lg:col-span-4 px-6 lg:px-0'>
                             <h3 className="text-lg font-semibold mb-4">Plasti Injmould India Ltd.</h3>
-                            <p className="mb-2">Plot No. B1 21, Amalgamated Indl Complex, Asangaon, West Shahapur - 421601</p>
-                            <p className="mb-2 flex items-center gap-2"><Mail className='h-5 w-5' /> example@gmail.com</p>
-                            <p className='mb-2 flex items-center gap-2'><Phone className='h-5 w-5' /> Makarand - <strong className='text-red-400 tracking-wider'> 8591195915</strong></p>
+                            <p className="mb-2 flex items-start gap-2"><LocateFixedIcon className='h-5 w-5 flex-shrink-0 mt-0.5' />Plot No. B1 21, Amalgamated Indl Complex, Asangaon, West Shahapur - 421601</p>
+                            <p className="mb-2 flex items-center gap-2"><Mail className='h-5 w-5 flex-shrink-0' /> example@gmail.com</p>
+                            <p className='mb-2 flex items-center gap-2'><Phone className='h-5 w-5 flex-shrink-0' /><strong className='text-red-400 tracking-wider'>+91 8591195915</strong></p>
                         </div>
 
                         {/* Quick Links */}
