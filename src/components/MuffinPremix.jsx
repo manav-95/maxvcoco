@@ -3,7 +3,6 @@ import { Slide } from 'react-awesome-reveal'
 
 import Chocolate_Muffin from '../assets/muffin-premix-images/chocolate-muffin.png'
 import Vanilla_Muffin from '../assets/muffin-premix-images/vanilla-muffin.png'
-import Waffle from '../assets/muffin-premix-images/waffle.png'
 
 const MuffinPremix = () => {
 

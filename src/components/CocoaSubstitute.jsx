@@ -1,5 +1,4 @@
 import React from 'react'
-import ExampleImage from '../assets/chcoc-paste-images/white.png'
 import { Fade, Slide, Zoom } from 'react-awesome-reveal'
 
 import CocoaSubstituteImage from '../assets/cocoa-images/cocoa-substitute.jpg' 
@@ -31,36 +30,6 @@ const CocoaSubstitute = () => {
                                     />
                                 </div>
                             </Zoom>
-
-                            {/* <Zoom triggerOnce duration={800} delay={150}>
-                                <div className='flex items-center justify-center bg-[#4e3620] bg-opacity-10 rounded-lg p-2'>
-                                    <img
-                                        src={ExampleImage}
-                                        alt='image1'
-                                        className='lg:h-40 lg:w-40 xl:h-48 xl:w-56 object-contain '
-                                    />
-                                </div>
-                            </Zoom>
-
-                            <Zoom triggerOnce duration={800} delay={300}>
-                                <div className='flex items-center justify-center bg-[#4e3620] bg-opacity-10 rounded-lg p-2'>
-                                    <img
-                                        src={ExampleImage}
-                                        alt='image1'
-                                        className='lg:h-40 lg:w-40 xl:h-48 xl:w-56 object-contain'
-                                    />
-                                </div>
-                            </Zoom>
-
-                            <Zoom triggerOnce duration={800} delay={450}>
-                                <div className='flex items-center justify-center bg-[#4e3620] bg-opacity-10 rounded-lg p-2'>
-                                    <img
-                                        src={ExampleImage}
-                                        alt='image1'
-                                        className='lg:h-40 lg:w-40 xl:h-48 xl:w-56 object-contain'
-                                    />
-                                </div>
-                            </Zoom> */}
 
                         </div>
 

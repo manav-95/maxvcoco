@@ -1,6 +1,5 @@
 import React from 'react'
 import { Slide, Fade, Zoom } from 'react-awesome-reveal'
-import ExImage from '../assets/chcoc-paste-images/choco-paste-example.png'
 
 import WhitePaste from '../assets/chcoc-paste-images/white.png'
 import MilkPaste from '../assets/chcoc-paste-images/milk.png'

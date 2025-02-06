@@ -6,9 +6,9 @@ import Home from './pages/Home'
 import Products from './pages/Products'
 import Services from './pages/Services'
 import AboutUs from './pages/About'
-import './App.css'
 import Footer from './components/footer/Footer'
 import ProductDetails from './pages/ProductDetails'
+import './App.css'
 
 const App = () => {
   return (

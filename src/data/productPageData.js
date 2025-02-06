@@ -67,20 +67,6 @@ import Almond_Brittle from '../assets/consumer-chocolate-images/almond-brittle.p
 
 const products = {
 
-    // 'Cake Premixes': [
-    //     { id: 1, delay: 0, image: ChocolateCakePremix, name: 'Chocolate Cake Premix' },
-    //     { id: 2, delay: 150, image: VanillaCakePremix, name: 'Vanilla Cake Premix' },
-    //     { id: 3, delay: 300, image: RedVelvetCakePremix, name: 'Red Velvet Cake Premix' },
-    //     { id: 4, delay: 450, image: ChocolavaCakePremix, name: 'Chocolava Cake Premix' },
-    //     { id: 5, delay: 600, image: BrownieCakePremix, name: 'Brownie Cake Premix' },
-    // ],
-
-    // 'Muffin Premixes': [
-    //     { id: 1, delay: 0, image: ChocolateMuffinPremix, name: 'Chocolate Muffin Premix' },
-    //     { id: 2, delay: 200, image: VanillaMuffinPremix, name: 'Vanilla Muffin Premix' },
-    //     { id: 3, delay: 400, image: WafflePremix, name: 'Waffle Premix' },
-    // ],
-
     'Premixes': [
         { id: 1, delay: 0, image: ChocolateCakePremix, name: 'Chocolate Cake Premix', description: 'A rich, moist chocolate cake premix that delivers the perfect texture and flavor for your cakes. Easy to prepare, just add water and bake. Ideal for chocolate lovers, this premix guarantees a delightful dessert experience every time.', },
         { id: 2, delay: 150, image: VanillaCakePremix, name: 'Vanilla Cake Premix', description: 'A classic vanilla cake premix that produces light, fluffy cakes with a smooth, sweet flavor. Perfect for any occasion, it’s easy to prepare—just add water. The ideal base for a variety of frosting and toppings.', },

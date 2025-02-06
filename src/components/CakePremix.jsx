@@ -1,11 +1,9 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom';
 import { Zoom, Slide } from 'react-awesome-reveal'
 
 import Chocolate from '../assets/cake-premix-images/chocolate-bread.png'
 import Vanila from '../assets/cake-premix-images/vanilla-bread-2.png'
 import Velvet from '../assets/cake-premix-images/red-velvet-bread.png'
-import SprinklesBg from '../assets/sprinkles-bg.png'
 import ChocolateBG from '../assets/chocolate-bg.jpg'
 
 

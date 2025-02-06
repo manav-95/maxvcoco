@@ -81,9 +81,7 @@ const DetailsCards = () => {
                                         </p>
                                     </div>
                                 </div>
-                                {/* <button className="px-6 py-3 bg-[#fbecdf] text-[#3B2B1A] rounded-lg font-semibold  transition-colors duration-200 mt-8">
-                                    Learn More
-                                </button> */}
+                               
                            </Zoom>
                             </div>
                         </div>

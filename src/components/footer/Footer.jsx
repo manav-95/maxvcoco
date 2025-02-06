@@ -55,7 +55,7 @@ const Footer = () => {
                         <div className='lg:col-span-4 px-6 lg:px-0'>
                             <h3 className="text-lg font-semibold mb-4">Plasti Injmould India Ltd.</h3>
                             <p className="mb-2 flex items-start gap-2"><LocateFixedIcon className='h-5 w-5 flex-shrink-0 mt-0.5' />Plot No. B1 21, Amalgamated Indl Complex, Asangaon, West Shahapur - 421601</p>
-                            <p className="mb-2 flex items-center gap-2"><Mail className='h-5 w-5 flex-shrink-0' /> example@gmail.com</p>
+                            <p className="mb-2 flex items-center gap-2"><Mail className='h-5 w-5 flex-shrink-0' />mp@maxvcoco.com</p>
                             <p className='mb-2 flex items-center gap-2'><Phone className='h-5 w-5 flex-shrink-0' /><strong className='text-red-400 tracking-wider'>+91 8591195915</strong></p>
                         </div>
 
@@ -116,20 +116,7 @@ const Footer = () => {
                                         </NavLink>
                                     ))}
                                 </ul>
-                                {/* <ul className="flex flex-col space-y-2">
-                        {productsLinks.slice(4,6).map(item => (
-                                <NavLink
-                                    to={item.link}
-                                    key={item.id}
-                                    className={({isActive}) => 
-                                    isActive
-                                    ? 'text-lg lg:text-sm xl:text-lg text-red-400'
-                                    : 'text-lg lg:text-sm xl:text-lg text-[#a7a8b4] hover:text-red-400 hover:text-xl transition-all duration-200 ease-in-out' 
-                                    }>
-                                    <p className='flex items-center'>{item.name}</p>
-                                </NavLink>
-                        ))}
-                        </ul> */}
+            
                             </div>
                         </div>
 

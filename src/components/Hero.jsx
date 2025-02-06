@@ -57,11 +57,6 @@ return () => clearInterval(interval);
                   Chocolates & Cocoa
                 </p>
               </div>
-
-              {/* Optional Tagline */}
-              {/* <p className="text-center text-xl sm:text-2xl lg:text-3xl font-medium mt-4 drop-shadow-2xl">
-                Where Chocolate Meets Perfection
-              </p> */}
             </div>
           </Slide>
         </div>

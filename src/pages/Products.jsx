@@ -135,9 +135,6 @@ const Products = () => {
             <h1 className="text-4xl min-[425px]:text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-7xl font-extrabold drop-shadow-2xl">
               Our Premium Chocolate Products
             </h1>
-            {/* <p className="mt-2 text-md min-[425px]:text-lg md:text-xl lg:text-3xl drop-shadow-2xl">
-           Discover a variety of chocolate delights for baking, snacking, and creating
-         </p> */}
           </div>
         </header>
 

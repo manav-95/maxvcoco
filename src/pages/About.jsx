@@ -6,11 +6,7 @@ import { GoDotFill } from "react-icons/go";
 
 import { motion } from "motion/react"
 
-
-import AboutHeroBg from '../assets/hero-images/about-hero-bg.jpeg';
 import ServicesHeroBg from '../assets/hero-images/services-hero-bg.jpg'
-
-import Mission from '../assets/about-images/mission-image.png';
 
 
 import Who_We_Are from '../assets/about-images/who-we-are-image.jpg'
@@ -35,9 +31,9 @@ const About = () => {
   ]
 
   const teamMembers = [
-    { id: 1, delay: 0, image: ProfileExample, name: 'Member 1', role: 'Founder & CEO', },
-    { id: 2, delay: 200, image: ProfileExample, name: 'Member 2', role: 'Head of Marketing', },
-    { id: 3, delay: 400, image: ProfileExample, name: 'Member 3', role: 'Product Manager', }
+    { id: 1, delay: 0, image: ProfileExample, name: 'Harish Kothari', role: 'Founder & CEO', },
+    { id: 2, delay: 200, image: ProfileExample, name: 'Makarand Parturkar', role: 'Chief Technology Officer', },
+    { id: 3, delay: 400, image: ProfileExample, name: 'Meghana Kothari', role: 'Director', }
   ]
 
   const slideFromBottom = {
@@ -59,48 +55,9 @@ const About = () => {
             <h1 className="text-3xl min-[425px]:text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-extrabold drop-shadow-2xl">
               Crafting Moments Of Pure Joy
             </h1>
-            {/* <p className="mt-2 text-md min-[425px]:text-lg md:text-xl lg:text-3xl drop-shadow-2xl">
-        Discover a variety of chocolate delights for baking, snacking, and creating
-        </p> */}
           </div>
         </header>
       </Fade>
-
-
-      {/*Old Mission Section */}
-      {/* <div className='w-full bg-[#4E3620] text-[#FDF6F0]'>
-        <section className="py-6 lg:py-16 px-4 max-w-7xl mx-auto poppins-regular">
-          <div className="flex flex-col-reverse items-center justify-center space-y-12 lg:flex-row lg:space-y-0 lg:items-center lg:justify-between">
-
-            <Slide triggerOnce direction='up' className='lg:w-6/12 mt-16 lg:mt-0'>
-              <div>
-                <h2 className="text-5xl font-bold kanit-semibold text-center lg:text-left">Our Mission</h2>
-                <p className="mt-6 text-lg min-[425px]:text-center lg:text-left">
-                  Our mission is to deliver not just products but experiences that inspire joy and
-                  connection. With a relentless focus on quality and innovation, we strive to bring
-                  our customers closer to moments that matter.
-                </p>
-                <p className="mt-4 text-lg min-[425px]:text-center lg:text-left">
-                  We believe in empowering communities, supporting sustainable practices, and
-                  fostering creativity to leave a lasting positive impact on society. Our journey
-                  is fueled by passion and guided by purpose.
-                </p>
-              </div>
-            </Slide>
-
-            <Slide triggerOnce direction='up' delay={200} className='lg:w-5/12 flex justify-center items-center bg-[#FDF6F0] bg-opacity-5 rounded-xl p-4'>
-              <div>
-                <img
-                  src={Mission}
-                  alt="Mission"
-                  className="h-[400px] w-[400px] object-contain rounded-lg xl:rotate-45"
-                />
-              </div>
-            </Slide>
-
-          </div>
-        </section>
-      </div> */}
 
       {/* Who We Are */}
       <section className="py-10 lg:py-14 px-4 bg-[#4E3620] text-[#FDF6F0]">
@@ -174,13 +131,6 @@ const About = () => {
               elevate products, drive business success, and delight consumers. Our commitment to
               excellence ensures:
             </p>
-            {/* <ul className="mt-6 space-y-4 list-disc list-inside text-lg font-medium">
-              <li>Sourcing the finest, ethically-produced cocoa beans</li>
-              <li>Crafting innovative and delightful chocolate creations</li>
-              <li>Educating consumers about the art and science of chocolate-making</li>
-              <li>Supporting fair trade practices and sustainable agriculture</li>
-              <li>Continuously improving our production processes to minimize environmental impact</li>
-            </ul> */}
             <div className='mt-6 flex flex-col space-y-4 text-lg font-medium'>
               <p className='flex items-start justify-start'><GoDotFill className='h-4 w-4 flex-shrink-0 mt-1 mr-1' />Superior chocolate products designed for impact and indulgence.</p>
               <p className='flex items-start justify-start'><GoDotFill className='h-4 w-4 flex-shrink-0 mt-1 mr-1' />Innovative, customizable solutions that enhance brand appeal and consumer experience.</p>
@@ -207,12 +157,6 @@ const About = () => {
                 where every product infused with MAXVCOCO chocolate sets new standards of quality,
                 indulgence, and market success.
               </p>
-              {/* <ul className="mt-6 space-y-4 list-disc list-inside text-lg font-medium">
-                <li>Become the most beloved and respected chocolate brand worldwide</li>
-                <li>Lead the industry in sustainable and innovative chocolate production</li>
-                <li>Inspire a global community of chocolate enthusiasts and conscious consumers</li>
-                <li>Create a positive ripple effect from bean to bar, improving lives and ecosystems</li>
-              </ul> */}
               <div className='mt-6 flex flex-col space-y-4 text-lg font-medium'>
                 <p className='flex items-start justify-start'><GoDotFill className='h-4 w-4 flex-shrink-0 mt-1 mr-1' />Become the most beloved and respected chocolate brand worldwide</p>
                 <p className='flex items-start justify-start'><GoDotFill className='h-4 w-4 flex-shrink-0 mt-1 mr-1' />Lead the industry in sustainable and innovative chocolate production</p>
@@ -271,10 +215,10 @@ const About = () => {
                   <img
                     src={member.image}
                     alt={member.role}
-                    className="w-24 h-24 object-cover rounded-full mx-auto"
+                    className="w-28 h-28 object-cover rounded-full mx-auto"
                   />
                   <h3 className="mt-4 text-xl font-semibold ">{member.name}</h3>
-                  <p className=" text-md font-semibold">{member.role}</p>
+                  <p className=" text-md font-semibold uppercase">{member.role}</p>
                 </div>
               </Slide>
             ))}
