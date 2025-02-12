@@ -13,6 +13,8 @@ import Who_We_Are from '../assets/about-images/who-we-are-image.jpg'
 import Vision from '../assets/about-images/our-vision.jpg'
 
 import ProfileExample from '../assets/profile-example.jpeg'
+import Member1 from '../assets/about-images/member-1.png'
+import Member2 from '../assets/about-images/member-2.png'
 
 import Quality from '../assets/about-images/our-values-images/quality.png'
 import Sustainability from '../assets/about-images/our-values-images/sustainability.png'
@@ -31,8 +33,8 @@ const About = () => {
   ]
 
   const teamMembers = [
-    { id: 1, delay: 0, image: ProfileExample, name: 'Harish Kothari', role: 'Founder & CEO', },
-    { id: 2, delay: 200, image: ProfileExample, name: 'Makarand Parturkar', role: 'Chief Technology Officer', },
+    { id: 1, delay: 0, image: Member1, name: 'Harish Kothari', role: 'Founder & CEO', },
+    { id: 2, delay: 200, image: Member2, name: 'Makarand Parturkar', role: 'Chief Technology Officer', },
     { id: 3, delay: 400, image: ProfileExample, name: 'Meghana Kothari', role: 'Director', }
   ]
 
@@ -215,7 +217,7 @@ const About = () => {
                   <img
                     src={member.image}
                     alt={member.role}
-                    className="w-28 h-28 object-cover rounded-full mx-auto"
+                    className="w-28 h-28 object-cover rounded-full mx-auto bg-[#d6b596]"
                   />
                   <h3 className="mt-4 text-xl font-semibold ">{member.name}</h3>
                   <p className=" text-md font-semibold uppercase">{member.role}</p>
