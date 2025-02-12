@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useRef} from 'react';
 
 import { Fade, Zoom, Slide } from 'react-awesome-reveal'
 
@@ -23,6 +23,12 @@ import Integrity from '../assets/about-images/our-values-images/integrity.png'
 import Teamwork from '../assets/about-images/our-values-images/teamwork.png'
 
 const About = () => {
+  
+  const whoWeAreRef = useRef(null);
+
+  const scrollToWhoWeAre = () => {
+    whoWeAreRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
 
   const ourValues = [
     { id: 1, delay: 0, colSpan: 'sm:col-span-6 lg:col-span-4', image: Quality, title: 'Quality', description: 'Every product is crafted with precision and care, ensuring an unparalleled experience for our customers. Excellence is our standard.', },
@@ -62,7 +68,7 @@ const About = () => {
       </Fade>
 
       {/* Who We Are */}
-      <section className="py-10 lg:py-14 px-4 bg-[#4E3620] text-[#FDF6F0]">
+      <section  ref={whoWeAreRef} className="py-10 lg:py-14 px-4 bg-[#4E3620] text-[#FDF6F0]">
         <div className="max-w-7xl container mx-auto">
           <h2 className="text-5xl font-bold text-brown-800 mb-8 text-center kanit-semibold">Who We Are</h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-8 items-center lg:py-4">
@@ -211,8 +217,9 @@ const About = () => {
             {teamMembers.map(member => (
               <Slide triggerOnce direction='up' delay={member.delay}>
                 <div
+                onClick={scrollToWhoWeAre}
                   key={member.id}
-                  className="text-center bg-[#FDF6F0] text-[#4E3620] rounded-lg shadow-lg p-6"
+                  className="text-center bg-[#FDF6F0] text-[#4E3620] rounded-lg shadow-lg p-6 cursor-pointer"
                 >
                   <img
                     src={member.image}
