@@ -1,7 +1,7 @@
 import React from 'react'
 import { Fade, Slide, Zoom } from 'react-awesome-reveal'
 
-import CocoaSubstituteImage from '../assets/cocoa-images/cocoa-substitute.jpg' 
+import CocoaSubstituteImage from '../assets/cocoa-images/cocoa-substitute.webp' 
 
 const CocoaSubstitute = () => {
     return (

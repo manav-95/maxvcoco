@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
-import Logo from '../../assets/company-logo.png'
+import Logo from '../../assets/company-logo.webp'
 import { NavLink, useLocation } from 'react-router-dom'
 import { MdOutlineMenuOpen, MdClose } from "react-icons/md";
 

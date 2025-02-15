@@ -1,14 +1,14 @@
 import React from 'react'
 import { Slide, Fade, Zoom } from 'react-awesome-reveal'
 
-import WhitePaste from '../assets/chcoc-paste-images/white.png'
-import MilkPaste from '../assets/chcoc-paste-images/milk.png'
-import DarkPaste from '../assets/chcoc-paste-images/dark.png'
-import HazelnutPaste from '../assets/chcoc-paste-images/hazelnut.png'
+import WhitePaste from '../assets/chcoc-paste-images/white.webp'
+import MilkPaste from '../assets/chcoc-paste-images/milk.webp'
+import DarkPaste from '../assets/chcoc-paste-images/dark.webp'
+import HazelnutPaste from '../assets/chcoc-paste-images/hazelnut.webp'
 
-import Dark from '../assets/choco-chips-images/dark.png'
-import White from '../assets/choco-chips-images/white.png'
-import Milk from '../assets/choco-chips-images/milk.png'
+import Dark from '../assets/choco-chips-images/dark.webp'
+import White from '../assets/choco-chips-images/white.webp'
+import Milk from '../assets/choco-chips-images/milk.webp'
 
 const ChocoPaste = () => {
     const chocoPastes = [

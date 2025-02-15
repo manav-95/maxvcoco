@@ -2,7 +2,7 @@ import { FaSeedling, FaMugHot, FaBox, FaChartLine, FaRegHeart, FaHandsHelping } 
 
 import { Fade, Zoom } from 'react-awesome-reveal'
 
-import ServicesHeroBg from '../assets/hero-images/services-hero-bg.jpg'
+import ServicesHeroBg from '../assets/hero-images/services-hero-bg.webp'
 
 const Services = () => {
 

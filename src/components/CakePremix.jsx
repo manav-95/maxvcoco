@@ -1,10 +1,10 @@
 import React from 'react'
 import { Zoom, Slide } from 'react-awesome-reveal'
 
-import Chocolate from '../assets/cake-premix-images/chocolate-bread.png'
-import Vanila from '../assets/cake-premix-images/vanilla-bread-2.png'
-import Velvet from '../assets/cake-premix-images/red-velvet-bread.png'
-import ChocolateBG from '../assets/chocolate-bg.jpg'
+import Chocolate from '../assets/cake-premix-images/chocolate-bread.webp'
+import Vanila from '../assets/cake-premix-images/vanilla-bread-2.webp'
+import Velvet from '../assets/cake-premix-images/red-velvet-bread.webp'
+import ChocolateBG from '../assets/chocolate-bg.webp'
 
 
 

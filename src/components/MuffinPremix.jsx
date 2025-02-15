@@ -1,8 +1,8 @@
 import React from 'react'
 import { Slide } from 'react-awesome-reveal'
 
-import Chocolate_Muffin from '../assets/muffin-premix-images/chocolate-muffin.png'
-import Vanilla_Muffin from '../assets/muffin-premix-images/vanilla-muffin.png'
+import Chocolate_Muffin from '../assets/muffin-premix-images/chocolate-muffin.webp'
+import Vanilla_Muffin from '../assets/muffin-premix-images/vanilla-muffin.webp'
 
 const MuffinPremix = () => {
 

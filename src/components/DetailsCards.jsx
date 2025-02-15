@@ -1,8 +1,8 @@
 import React from 'react';
 import { Slide, Fade, Zoom } from 'react-awesome-reveal'
 import {NavLink} from 'react-router-dom'
-import Premium_Chocolate_Making from '../assets/premium-chocolate-making.jpg'
-import Baking_Process from '../assets/baking-process.jpg'
+import Premium_Chocolate_Making from '../assets/premium-chocolate-making.webp'
+import Baking_Process from '../assets/baking-process.webp'
 
 const DetailsCards = () => {
     return (

@@ -5,7 +5,7 @@ import { motion } from "motion/react"
 
 import { FaChevronDown } from "react-icons/fa";
 
-import ServicesHeroBg from '../assets/hero-images/services-hero-bg.jpg'
+import ServicesHeroBg from '../assets/hero-images/services-hero-bg.webp'
 
 import { useNavigate, useParams, useSearchParams, Link } from 'react-router-dom';
 

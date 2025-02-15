@@ -6,22 +6,22 @@ import { GoDotFill } from "react-icons/go";
 
 import { motion } from "motion/react"
 
-import ServicesHeroBg from '../assets/hero-images/services-hero-bg.jpg'
+import ServicesHeroBg from '../assets/hero-images/services-hero-bg.webp'
 
 
-import Who_We_Are from '../assets/about-images/who-we-are-image.jpg'
-import Vision from '../assets/about-images/our-vision.jpg'
+import Who_We_Are from '../assets/about-images/who-we-are-image.webp'
+import Vision from '../assets/about-images/our-vision.webp'
 
-import ProfileExample from '../assets/profile-example.jpeg'
-import Member1 from '../assets/about-images/member-1.png'
-import Member2 from '../assets/about-images/member-2.png'
-import Member3 from '../assets/about-images/member-3.png'
+import ProfileExample from '../assets/profile-example.webp'
+import Member1 from '../assets/about-images/member-1.webp'
+import Member2 from '../assets/about-images/member-2.webp'
+import Member3 from '../assets/about-images/member-3.webp'
 
-import Quality from '../assets/about-images/our-values-images/quality.png'
-import Sustainability from '../assets/about-images/our-values-images/sustainability.png'
-import Innovation from '../assets/about-images/our-values-images/innovation.png'
-import Integrity from '../assets/about-images/our-values-images/integrity.png'
-import Teamwork from '../assets/about-images/our-values-images/teamwork.png'
+import Quality from '../assets/about-images/our-values-images/quality.webp'
+import Sustainability from '../assets/about-images/our-values-images/sustainability.webp'
+import Innovation from '../assets/about-images/our-values-images/innovation.webp'
+import Integrity from '../assets/about-images/our-values-images/integrity.webp'
+import Teamwork from '../assets/about-images/our-values-images/teamwork.webp'
 
 const About = () => {
   

@@ -3,10 +3,10 @@ import { FaArrowRight } from "react-icons/fa6";
 import { NavLink } from 'react-router-dom';
 import { Zoom, Slide } from 'react-awesome-reveal'
 
-import DarkChocolateCompound from '../assets/feature-products-images/dark-chocolate-compound.png'
-import ChocolateSlab from '../assets/feature-products-images/milk-chocolate.png'
-import WhitePaste from '../assets/feature-products-images/white.png'
-import WhiteChocolateCompound from '../assets/feature-products-images/white-chocolate.png'
+import DarkChocolateCompound from '../assets/feature-products-images/dark-chocolate-compound.webp'
+import ChocolateSlab from '../assets/feature-products-images/milk-chocolate.webp'
+import WhitePaste from '../assets/feature-products-images/white.webp'
+import WhiteChocolateCompound from '../assets/feature-products-images/white-chocolate.webp'
 
 
 const FeaturedProducts = () => {

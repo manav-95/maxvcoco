@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { Fade, Slide } from 'react-awesome-reveal';
 
-import HeroBg1 from '../assets/hero-images/home-hero-bg.jpg';
-import HeroBg3 from '../assets/hero-images/home-hero-bg-3.jpg';
-import HeroBg4 from '../assets/hero-images/home-hero-bg-4.jpeg';
+import HeroBg1 from '../assets/hero-images/home-hero-bg.webp';
+import HeroBg3 from '../assets/hero-images/home-hero-bg-3.webp';
+import HeroBg4 from '../assets/hero-images/home-hero-bg-4.webp';
 
-import Logo from '../assets/latest-hero-logo.png'
+import Logo from '../assets/latest-hero-logo.webp'
 
 
 const Hero = () => {

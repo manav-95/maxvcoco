@@ -1,68 +1,68 @@
 // Cake Premixes 
-import ChocolateCakePremix from '../assets/cake-premix-images/chocolate-bread.png'
-import VanillaCakePremix from '../assets/cake-premix-images/vanilla-bread.png'
-import RedVelvetCakePremix from '../assets/cake-premix-images/red-velvet-bread.png'
-import ChocolavaCakePremix from '../assets/cake-premix-images/chocolava-bread.png'
-import BrownieCakePremix from '../assets/cake-premix-images/brownie-bread.png'
+import ChocolateCakePremix from '../assets/cake-premix-images/chocolate-bread.webp'
+import VanillaCakePremix from '../assets/cake-premix-images/vanilla-bread.webp'
+import RedVelvetCakePremix from '../assets/cake-premix-images/red-velvet-bread.webp'
+import ChocolavaCakePremix from '../assets/cake-premix-images/chocolava-bread.webp'
+import BrownieCakePremix from '../assets/cake-premix-images/brownie-bread.webp'
 
 //   Muffin Premixes 
-import ChocolateMuffinPremix from '../assets/muffin-premix-images/chocolate-cup-muffin.png'
-import VanillaMuffinPremix from '../assets/muffin-premix-images/vanila-cup-muffin.png'
-import WafflePremix from '../assets/muffin-premix-images/waffle.png'
+import ChocolateMuffinPremix from '../assets/muffin-premix-images/chocolate-cup-muffin.webp'
+import VanillaMuffinPremix from '../assets/muffin-premix-images/vanila-cup-muffin.webp'
+import WafflePremix from '../assets/muffin-premix-images/waffle.webp'
 
 // Basic Chocolate Compounds 
-import WhiteChocolateCompound from '../assets/chocolate-compounds-images/white-chocolate.png'
-import MilkChocolateCompound from '../assets/chocolate-compounds-images/milk-chocolate.png'
-import DarkChocolateCompound from '../assets/chocolate-compounds-images/dark-chocolate-compound.png'
+import WhiteChocolateCompound from '../assets/chocolate-compounds-images/white-chocolate.webp'
+import MilkChocolateCompound from '../assets/chocolate-compounds-images/milk-chocolate.webp'
+import DarkChocolateCompound from '../assets/chocolate-compounds-images/dark-chocolate-compound.webp'
 
 // Flavoured Chocolate Compounds
-import Mango from '../assets/chocolate-compounds-images/mango-flavour.png'
-import Orange from '../assets/chocolate-compounds-images/orange-flavour.png'
-import Strawberry from '../assets/chocolate-compounds-images/strawberry-flavour.png'
-import Pineapple from '../assets/chocolate-compounds-images/pineapple-flavour.png'
-import Blueberry from '../assets/chocolate-compounds-images/blueberry-flavour.png'
-import Pista from '../assets/chocolate-compounds-images/pista-flavour.png'
+import Mango from '../assets/chocolate-compounds-images/mango-flavour.webp'
+import Orange from '../assets/chocolate-compounds-images/orange-flavour.webp'
+import Strawberry from '../assets/chocolate-compounds-images/strawberry-flavour.webp'
+import Pineapple from '../assets/chocolate-compounds-images/pineapple-flavour.webp'
+import Blueberry from '../assets/chocolate-compounds-images/blueberry-flavour.webp'
+import Pista from '../assets/chocolate-compounds-images/pista-flavour.webp'
 
 // Real Chocolates 
-import Couverture_Chocolate from '../assets/real-chocolates-images/couverture.png'
-import Dark_Chips from '../assets/real-chocolates-images/dark-chips.png'
-import Cocoa_Butter from '../assets/real-chocolates-images/cocoa-butter.png'
-import Cocoa_Mass from '../assets/real-chocolates-images/cocoa-mass.png'
-import Chocolate_Tablets from '../assets/real-chocolates-images/chocolate-tablets.png'
-import Customized_Chocolates from '../assets/real-chocolates-images/customized-chocolates.png'
+import Couverture_Chocolate from '../assets/real-chocolates-images/couverture.webp'
+import Dark_Chips from '../assets/real-chocolates-images/dark-chips.webp'
+import Cocoa_Butter from '../assets/real-chocolates-images/cocoa-butter.webp'
+import Cocoa_Mass from '../assets/real-chocolates-images/cocoa-mass.webp'
+import Chocolate_Tablets from '../assets/real-chocolates-images/chocolate-tablets.webp'
+import Customized_Chocolates from '../assets/real-chocolates-images/customized-chocolates.webp'
 
 // Choco Pastes 
-import WhitePaste from '../assets/chcoc-paste-images/white.png'
-import MilkPaste from '../assets/chcoc-paste-images/milk.png'
-import DarkPaste from '../assets/chcoc-paste-images/dark.png'
-import HazelnutPaste from '../assets/chcoc-paste-images/hazelnut.png'
+import WhitePaste from '../assets/chcoc-paste-images/white.webp'
+import MilkPaste from '../assets/chcoc-paste-images/milk.webp'
+import DarkPaste from '../assets/chcoc-paste-images/dark.webp'
+import HazelnutPaste from '../assets/chcoc-paste-images/hazelnut.webp'
 
 // Flavoured Chocolate Paste 
-import MangoPaste from '../assets/chcoc-paste-images/mango-paste.png'
-import OrangePaste from '../assets/chcoc-paste-images/orange-paste.png'
-import StrawberryPaste from '../assets/chcoc-paste-images/strawberry-paste.png'
-import BlueberryPaste from '../assets/chcoc-paste-images/blueberry-paste.png'
-import PineapplePaste from '../assets/chcoc-paste-images/pineapple-paste.png'
-import PistaPaste from '../assets/chcoc-paste-images/pista-paste.png'
+import MangoPaste from '../assets/chcoc-paste-images/mango-paste.webp'
+import OrangePaste from '../assets/chcoc-paste-images/orange-paste.webp'
+import StrawberryPaste from '../assets/chcoc-paste-images/strawberry-paste.webp'
+import BlueberryPaste from '../assets/chcoc-paste-images/blueberry-paste.webp'
+import PineapplePaste from '../assets/chcoc-paste-images/pineapple-paste.webp'
+import PistaPaste from '../assets/chcoc-paste-images/pista-paste.webp'
 
 
 // Choco Chips
-import Dark from '../assets/choco-chips-images/dark.png'
-import White from '../assets/choco-chips-images/white.png'
-import Milk from '../assets/choco-chips-images/milk.png'
+import Dark from '../assets/choco-chips-images/dark.webp'
+import White from '../assets/choco-chips-images/white.webp'
+import Milk from '../assets/choco-chips-images/milk.webp'
 
 // Cocoa Substitutes 
-import Natural_Carob from '../assets/cocoa-images/natural-carob.png'
-import Medium_Carob from '../assets/cocoa-images/medium-carob.png'
-import Dark_Carob from '../assets/cocoa-images/dark-carob.png'
+import Natural_Carob from '../assets/cocoa-images/natural-carob.webp'
+import Medium_Carob from '../assets/cocoa-images/medium-carob.webp'
+import Dark_Carob from '../assets/cocoa-images/dark-carob.webp'
 
 // Formulated Cocoa Substitute
-import Formulated_Cocoa from '../assets/cocoa-images/formulated-cocoa.png'
+import Formulated_Cocoa from '../assets/cocoa-images/formulated-cocoa.webp'
 
 // Consumer Chocolates 
-import Centerfilled_Chocolates from '../assets/consumer-chocolate-images/centerfilled-chocolates.png'
-import Tablets from '../assets/consumer-chocolate-images/chocolate-tablets.png'
-import Almond_Brittle from '../assets/consumer-chocolate-images/almond-brittle.png'
+import Centerfilled_Chocolates from '../assets/consumer-chocolate-images/centerfilled-chocolates.webp'
+import Tablets from '../assets/consumer-chocolate-images/chocolate-tablets.webp'
+import Almond_Brittle from '../assets/consumer-chocolate-images/almond-brittle.webp'
 
 
 const products = {

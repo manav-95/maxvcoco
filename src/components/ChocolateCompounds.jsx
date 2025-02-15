@@ -6,17 +6,17 @@ import { FaArrowRight } from "react-icons/fa6";
 
 
 // Basic Chocolate Compounds
-import WhiteChocolateCompound from '../assets/chocolate-compounds-images/white-chocolate.png'
-import MilkChocolateCompound from '../assets/chocolate-compounds-images/milk-chocolate.png'
-import DarkChocolateCompound from '../assets/chocolate-compounds-images/dark-chocolate-compound.png'
+import WhiteChocolateCompound from '../assets/chocolate-compounds-images/white-chocolate.webp'
+import MilkChocolateCompound from '../assets/chocolate-compounds-images/milk-chocolate.webp'
+import DarkChocolateCompound from '../assets/chocolate-compounds-images/dark-chocolate-compound.webp'
 
 // Chocolate Compounds Flavours
-import Mango from '../assets/chocolate-compounds-images/mango-flavour.png'
-import Orange from '../assets/chocolate-compounds-images/orange-flavour.png'
-import Strawberry from '../assets/chocolate-compounds-images/strawberry-flavour.png'
-import Pineapple from '../assets/chocolate-compounds-images/pineapple-flavour.png'
-import Blueberry from '../assets/chocolate-compounds-images/blueberry-flavour.png'
-import Pista from '../assets/chocolate-compounds-images/pista-flavour.png'
+import Mango from '../assets/chocolate-compounds-images/mango-flavour.webp'
+import Orange from '../assets/chocolate-compounds-images/orange-flavour.webp'
+import Strawberry from '../assets/chocolate-compounds-images/strawberry-flavour.webp'
+import Pineapple from '../assets/chocolate-compounds-images/pineapple-flavour.webp'
+import Blueberry from '../assets/chocolate-compounds-images/blueberry-flavour.webp'
+import Pista from '../assets/chocolate-compounds-images/pista-flavour.webp'
 
 
 const ChocolateCompounds = () => {
